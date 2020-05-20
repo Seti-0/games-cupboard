@@ -12,7 +12,7 @@ using Duality.Editor;
 
 using Soulstone.Duality.Utility;
 
-using Soulstone.Duality.Plugins.Cupboard.Input;
+using Soulstone.Duality.Plugins.Blue.Input;
 using Soulstone.Duality.Plugins.Cupboard.Properties;
 
 
@@ -221,7 +221,7 @@ namespace Soulstone.Duality.Plugins.Cupboard.Components
         {
             if (Warnings.Inactive(this)) return;
 
-            var dragTarget = CupboardApp.Input.DragTarget as Component;
+            var dragTarget = BlueInputApp.Input.DragTarget as Component;
 
             // The second condition is a quick hack, there should be a more flexible way to check for this.
             if (dragTarget == null || dragTarget?.GameObj.GetComponent<Draggable>() == null)

@@ -64,6 +64,18 @@
             <active dataType="Bool">true</active>
             <gameobj dataType="ObjectRef">3387173850</gameobj>
           </item>
+          <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="1034566131">
+            <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+            <_x003C_Global_x003E_k__BackingField dataType="Bool">true</_x003C_Global_x003E_k__BackingField>
+            <active dataType="Bool">true</active>
+            <gameobj dataType="ObjectRef">3387173850</gameobj>
+          </item>
+          <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.KeyListener" id="536263951">
+            <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+            <_x003C_RequestFocus_x003E_k__BackingField dataType="Bool">false</_x003C_RequestFocus_x003E_k__BackingField>
+            <active dataType="Bool">true</active>
+            <gameobj dataType="ObjectRef">3387173850</gameobj>
+          </item>
           <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.Comment" id="2138979293">
             <_x003C_Text_x003E_k__BackingField dataType="String">Blue: 38, 56, 92     Brown: 141, 81, 71</_x003C_Text_x003E_k__BackingField>
             <active dataType="Bool">true</active>
@@ -75,19 +87,6 @@
             <_scaleRate dataType="Float">10</_scaleRate>
             <_tolerance dataType="Float">0.001</_tolerance>
             <_zRate />
-            <active dataType="Bool">true</active>
-            <gameobj dataType="ObjectRef">3387173850</gameobj>
-          </item>
-          <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" id="3821216421">
-            <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-            <_x003C_Global_x003E_k__BackingField dataType="Bool">true</_x003C_Global_x003E_k__BackingField>
-            <active dataType="Bool">true</active>
-            <gameobj dataType="ObjectRef">3387173850</gameobj>
-          </item>
-          <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.KeyListener" id="3295988497">
-            <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-            <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
-            <_x003C_RequestFocus_x003E_k__BackingField dataType="Bool">false</_x003C_RequestFocus_x003E_k__BackingField>
             <active dataType="Bool">true</active>
             <gameobj dataType="ObjectRef">3387173850</gameobj>
           </item>
@@ -147,7 +146,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">0 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="1120935231">
                                         <changes />
@@ -194,7 +193,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="1914667751">
                                         <changes />
@@ -241,7 +240,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="1887701046">
                                         <changes />
@@ -288,7 +287,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="341502891">
                                         <changes />
@@ -335,7 +334,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="4074670007">
                                         <changes />
@@ -382,7 +381,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="549561490">
                                         <changes />
@@ -429,7 +428,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3219071712">
                                         <changes />
@@ -476,7 +475,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3548768600">
                                         <changes />
@@ -523,7 +522,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="4270444410">
                                         <changes />
@@ -570,7 +569,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="4209802384">
                                         <changes />
@@ -617,7 +616,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="127603557">
                                         <changes />
@@ -664,7 +663,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2219041034">
                                         <changes />
@@ -711,7 +710,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2829780866">
                                         <changes />
@@ -758,7 +757,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2448850692">
                                         <changes />
@@ -805,7 +804,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3960246763">
                                         <changes />
@@ -852,7 +851,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3915294053">
                                         <changes />
@@ -899,7 +898,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2169496634">
                                         <changes />
@@ -946,7 +945,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2963579042">
                                         <changes />
@@ -993,7 +992,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="778670690">
                                         <changes />
@@ -1040,7 +1039,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="1355944972">
                                         <changes />
@@ -1087,7 +1086,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2171626727">
                                         <changes />
@@ -1134,7 +1133,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="4043109880">
                                         <changes />
@@ -1181,7 +1180,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="893732840">
                                         <changes />
@@ -1228,7 +1227,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2793175305">
                                         <changes />
@@ -1275,7 +1274,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="4108319112">
                                         <changes />
@@ -1322,7 +1321,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="218030623">
                                         <changes />
@@ -1369,7 +1368,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3597015598">
                                         <changes />
@@ -1416,7 +1415,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2768193749">
                                         <changes />
@@ -1463,7 +1462,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3813814833">
                                         <changes />
@@ -1510,7 +1509,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="4221038031">
                                         <changes />
@@ -1557,7 +1556,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3249155097">
                                         <changes />
@@ -1604,7 +1603,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="804633006">
                                         <changes />
@@ -1651,7 +1650,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="4084979976">
                                         <changes />
@@ -1698,7 +1697,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3772302804">
                                         <changes />
@@ -1745,7 +1744,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="1829459142">
                                         <changes />
@@ -1792,7 +1791,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="4133597803">
                                         <changes />
@@ -1839,7 +1838,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3862033135">
                                         <changes />
@@ -1886,7 +1885,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="233290771">
                                         <changes />
@@ -1933,7 +1932,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2540430323">
                                         <changes />
@@ -1980,7 +1979,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="41627439">
                                         <changes />
@@ -2027,7 +2026,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2732259084">
                                         <changes />
@@ -2074,7 +2073,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3941901555">
                                         <changes />
@@ -2121,7 +2120,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="998723584">
                                         <changes />
@@ -2168,7 +2167,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="921045346">
                                         <changes />
@@ -2215,7 +2214,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2202067095">
                                         <changes />
@@ -2262,7 +2261,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="4266982142">
                                         <changes />
@@ -2309,7 +2308,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="555206246">
                                         <changes />
@@ -2356,7 +2355,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="1042220997">
                                         <changes />
@@ -2403,7 +2402,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="4173536267">
                                         <changes />
@@ -2450,7 +2449,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="732905514">
                                         <changes />
@@ -2497,7 +2496,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="633424393">
                                         <changes />
@@ -2544,7 +2543,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="658324138">
                                         <changes />
@@ -2591,7 +2590,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="1130911737">
                                         <changes />
@@ -2638,7 +2637,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3297170">
                                         <changes />
@@ -2685,7 +2684,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3614495667">
                                         <changes />
@@ -2732,7 +2731,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3792958505">
                                         <changes />
@@ -2779,7 +2778,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="1954727972">
                                         <changes />
@@ -2826,7 +2825,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="4148848952">
                                         <changes />
@@ -2873,7 +2872,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="816960424">
                                         <changes />
@@ -2920,7 +2919,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3591692054">
                                         <changes />
@@ -2967,7 +2966,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3839968692">
                                         <changes />
@@ -3014,7 +3013,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="1020648648">
                                         <changes />
@@ -3061,7 +3060,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="4265758907">
                                         <changes />
@@ -3108,7 +3107,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3157589003">
                                         <changes />
@@ -3155,7 +3154,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2051382111">
                                         <changes />
@@ -3202,7 +3201,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2850783722">
                                         <changes />
@@ -3249,7 +3248,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="1106423091">
                                         <changes />
@@ -3296,7 +3295,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="404669676">
                                         <changes />
@@ -3343,7 +3342,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="4041022675">
                                         <changes />
@@ -3390,7 +3389,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="1693539096">
                                         <changes />
@@ -3437,7 +3436,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="279714892">
                                         <changes />
@@ -3484,7 +3483,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3710858204">
                                         <changes />
@@ -3531,7 +3530,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="4223265389">
                                         <changes />
@@ -3578,7 +3577,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3070213800">
                                         <changes />
@@ -3625,7 +3624,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3640447971">
                                         <changes />
@@ -3672,7 +3671,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="1913735876">
                                         <changes />
@@ -3719,7 +3718,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="57390726">
                                         <changes />
@@ -3766,7 +3765,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3240593013">
                                         <changes />
@@ -3813,7 +3812,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3078636694">
                                         <changes />
@@ -3860,7 +3859,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="286217447">
                                         <changes />
@@ -3907,7 +3906,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2573017635">
                                         <changes />
@@ -3954,7 +3953,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2173260336">
                                         <changes />
@@ -4001,7 +4000,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3413414465">
                                         <changes />
@@ -4048,7 +4047,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="4191761652">
                                         <changes />
@@ -4095,7 +4094,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2636109865">
                                         <changes />
@@ -4142,7 +4141,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2157145324">
                                         <changes />
@@ -4189,7 +4188,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="808100021">
                                         <changes />
@@ -4236,7 +4235,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="1780352669">
                                         <changes />
@@ -4283,7 +4282,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2846343080">
                                         <changes />
@@ -4330,7 +4329,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="897201161">
                                         <changes />
@@ -4377,7 +4376,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="954385301">
                                         <changes />
@@ -4424,7 +4423,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="4144300221">
                                         <changes />
@@ -4471,7 +4470,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2984520484">
                                         <changes />
@@ -4518,7 +4517,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3702480799">
                                         <changes />
@@ -4565,7 +4564,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="495634753">
                                         <changes />
@@ -4612,7 +4611,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="288902815">
                                         <changes />
@@ -4659,7 +4658,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2935728560">
                                         <changes />
@@ -4706,7 +4705,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="895875792">
                                         <changes />
@@ -4753,7 +4752,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="532813047">
                                         <changes />
@@ -4800,7 +4799,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="9249637">
                                         <changes />
@@ -4847,7 +4846,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2812914592">
                                         <changes />
@@ -4894,7 +4893,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="1775070901">
                                         <changes />
@@ -4941,7 +4940,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2274490417">
                                         <changes />
@@ -4988,7 +4987,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="4061225477">
                                         <changes />
@@ -5035,7 +5034,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="312400295">
                                         <changes />
@@ -5082,7 +5081,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3413361935">
                                         <changes />
@@ -5129,7 +5128,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="1524007668">
                                         <changes />
@@ -5176,7 +5175,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="717435703">
                                         <changes />
@@ -5223,7 +5222,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="466720693">
                                         <changes />
@@ -5270,7 +5269,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="834866247">
                                         <changes />
@@ -5317,7 +5316,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3376480731">
                                         <changes />
@@ -5364,7 +5363,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3292362079">
                                         <changes />
@@ -5411,7 +5410,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="1612492879">
                                         <changes />
@@ -5458,7 +5457,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2331859704">
                                         <changes />
@@ -5505,7 +5504,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="336616217">
                                         <changes />
@@ -5552,7 +5551,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3208730515">
                                         <changes />
@@ -5599,7 +5598,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3618565236">
                                         <changes />
@@ -5646,7 +5645,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="1316796861">
                                         <changes />
@@ -5693,7 +5692,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="239915290">
                                         <changes />
@@ -5740,7 +5739,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="3180219354">
                                         <changes />
@@ -5787,7 +5786,7 @@
                                         <body />
                                       </identifier>
                                       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
-                                      <name dataType="String">1 (Hole)</name>
+                                      <name dataType="String">Hole</name>
                                       <parent dataType="ObjectRef">956795791</parent>
                                       <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="356451574">
                                         <changes />
@@ -6736,8 +6735,8 @@
             <item dataType="Type" id="2229551726" value="Duality.Components.VelocityTracker" />
             <item dataType="Type" id="4107974316" value="Duality.Components.SoundListener" />
             <item dataType="Type" id="3806364690" value="Soulstone.Duality.Plugins.Cupboard.Components.Comment" />
-            <item dataType="Type" id="2844716680" value="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" />
-            <item dataType="Type" id="2212709222" value="Soulstone.Duality.Plugins.Cupboard.Components.KeyListener" />
+            <item dataType="Type" id="2844716680" value="Soulstone.Duality.Plugins.Blue.Input.MouseListener" />
+            <item dataType="Type" id="2212709222" value="Soulstone.Duality.Plugins.Blue.Input.KeyListener" />
             <item dataType="Type" id="1217746500" value="Soulstone.Duality.Plugins.Cupboard.Components.CameraController" />
             <item dataType="Type" id="3546091530" value="Soulstone.Duality.Plugins.Cupboard.Components.Glider" />
           </keys>
@@ -6747,8 +6746,8 @@
             <item dataType="ObjectRef">1163341021</item>
             <item dataType="ObjectRef">1124859081</item>
             <item dataType="ObjectRef">2138979293</item>
-            <item dataType="ObjectRef">3821216421</item>
-            <item dataType="ObjectRef">3295988497</item>
+            <item dataType="ObjectRef">1034566131</item>
+            <item dataType="ObjectRef">536263951</item>
             <item dataType="ObjectRef">1393114075</item>
             <item dataType="ObjectRef">1705368949</item>
           </values>
@@ -6850,6 +6849,12 @@
                         </text>
                         <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                       </item>
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="1527031241">
+                        <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+                        <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                        <active dataType="Bool">true</active>
+                        <gameobj dataType="ObjectRef">3879638960</gameobj>
+                      </item>
                       <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" id="325730781">
                         <_current />
                         <_original dataType="Float">0.2</_original>
@@ -6882,12 +6887,6 @@
                         <active dataType="Bool">true</active>
                         <gameobj dataType="ObjectRef">3879638960</gameobj>
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" id="18714235">
-                        <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-                        <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
-                        <active dataType="Bool">true</active>
-                        <gameobj dataType="ObjectRef">3879638960</gameobj>
-                      </item>
                       <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Button" id="401790230">
                         <_command />
                         <_normalAlpha dataType="Float">0.1</_normalAlpha>
@@ -6916,7 +6915,7 @@
                         <item dataType="ObjectRef">3936916178</item>
                         <item dataType="ObjectRef">1053290944</item>
                         <item dataType="ObjectRef">325730781</item>
-                        <item dataType="ObjectRef">18714235</item>
+                        <item dataType="ObjectRef">1527031241</item>
                         <item dataType="ObjectRef">401790230</item>
                         <item dataType="ObjectRef">467609318</item>
                         <item dataType="ObjectRef">3112622770</item>
@@ -6959,6 +6958,11 @@
                   <scale dataType="Float">1</scale>
                   <scaleAbs dataType="Float">1</scaleAbs>
                 </item>
+                <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.ResizeListener" id="3104365906">
+                  <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">3482517518</gameobj>
+                </item>
                 <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Layout" id="2212435854">
                   <_ignoreLayout dataType="Bool">false</_ignoreLayout>
                   <_orientation dataType="Enum" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Orientation" name="Vertical" value="1" />
@@ -6967,11 +6971,6 @@
                     <X dataType="Float">1</X>
                     <Y dataType="Float">0</Y>
                   </_relativePos>
-                  <active dataType="Bool">true</active>
-                  <gameobj dataType="ObjectRef">3482517518</gameobj>
-                </item>
-                <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.ResizeListener" id="3131211532">
-                  <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">3482517518</gameobj>
                 </item>
@@ -6984,12 +6983,12 @@
                 <keys dataType="Array" type="System.Object[]" id="2643302048">
                   <item dataType="ObjectRef">1481344110</item>
                   <item dataType="Type" id="1926409436" value="Soulstone.Duality.Plugins.Cupboard.Components.UI.Layout" />
-                  <item dataType="Type" id="2884929814" value="Soulstone.Duality.Plugins.Cupboard.Components.ResizeListener" />
+                  <item dataType="Type" id="2884929814" value="Soulstone.Duality.Plugins.Blue.Input.ResizeListener" />
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="1513256078">
                   <item dataType="ObjectRef">3539794736</item>
                   <item dataType="ObjectRef">2212435854</item>
-                  <item dataType="ObjectRef">3131211532</item>
+                  <item dataType="ObjectRef">3104365906</item>
                 </values>
               </body>
             </compMap>
@@ -7484,6 +7483,12 @@
                         </text>
                         <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                       </item>
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="1666412969">
+                        <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+                        <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                        <active dataType="Bool">true</active>
+                        <gameobj dataType="ObjectRef">4019020688</gameobj>
+                      </item>
                       <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" id="465112509">
                         <_current />
                         <_original dataType="Float">0.2</_original>
@@ -7516,12 +7521,6 @@
                         <active dataType="Bool">true</active>
                         <gameobj dataType="ObjectRef">4019020688</gameobj>
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" id="158095963">
-                        <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-                        <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
-                        <active dataType="Bool">true</active>
-                        <gameobj dataType="ObjectRef">4019020688</gameobj>
-                      </item>
                       <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Button" id="541171958">
                         <_command />
                         <_normalAlpha dataType="Float">0.1</_normalAlpha>
@@ -7550,7 +7549,7 @@
                         <item dataType="ObjectRef">4076297906</item>
                         <item dataType="ObjectRef">1192672672</item>
                         <item dataType="ObjectRef">465112509</item>
-                        <item dataType="ObjectRef">158095963</item>
+                        <item dataType="ObjectRef">1666412969</item>
                         <item dataType="ObjectRef">541171958</item>
                         <item dataType="ObjectRef">606991046</item>
                         <item dataType="ObjectRef">3252004498</item>
@@ -7593,16 +7592,16 @@
                   <scale dataType="Float">1</scale>
                   <scaleAbs dataType="Float">1</scaleAbs>
                 </item>
+                <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.ResizeListener" id="1825173515">
+                  <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">2203325127</gameobj>
+                </item>
                 <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Layout" id="933243463">
                   <_ignoreLayout dataType="Bool">false</_ignoreLayout>
                   <_orientation dataType="Enum" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Orientation" name="Horizontal" value="0" />
                   <_place dataType="Int">0</_place>
                   <_relativePos dataType="Struct" type="Duality.Vector2" />
-                  <active dataType="Bool">true</active>
-                  <gameobj dataType="ObjectRef">2203325127</gameobj>
-                </item>
-                <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.ResizeListener" id="1852019141">
-                  <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">2203325127</gameobj>
                 </item>
@@ -7620,7 +7619,7 @@
                 <values dataType="Array" type="System.Object[]" id="3183530934">
                   <item dataType="ObjectRef">2260602345</item>
                   <item dataType="ObjectRef">933243463</item>
-                  <item dataType="ObjectRef">1852019141</item>
+                  <item dataType="ObjectRef">1825173515</item>
                 </values>
               </body>
             </compMap>
@@ -7715,6 +7714,12 @@
                         </text>
                         <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                       </item>
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="1168619548">
+                        <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+                        <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                        <active dataType="Bool">true</active>
+                        <gameobj dataType="ObjectRef">3521227267</gameobj>
+                      </item>
                       <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" id="4262286384">
                         <_current />
                         <_original dataType="Float">0.2</_original>
@@ -7747,12 +7752,6 @@
                         <active dataType="Bool">true</active>
                         <gameobj dataType="ObjectRef">3521227267</gameobj>
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" id="3955269838">
-                        <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-                        <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
-                        <active dataType="Bool">true</active>
-                        <gameobj dataType="ObjectRef">3521227267</gameobj>
-                      </item>
                       <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Button" id="43378537">
                         <_command />
                         <_normalAlpha dataType="Float">0.1</_normalAlpha>
@@ -7781,7 +7780,7 @@
                         <item dataType="ObjectRef">3578504485</item>
                         <item dataType="ObjectRef">694879251</item>
                         <item dataType="ObjectRef">4262286384</item>
-                        <item dataType="ObjectRef">3955269838</item>
+                        <item dataType="ObjectRef">1168619548</item>
                         <item dataType="ObjectRef">43378537</item>
                         <item dataType="ObjectRef">109197625</item>
                         <item dataType="ObjectRef">2754211077</item>
@@ -7954,6 +7953,12 @@
                                     </text>
                                     <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                                   </item>
+                                  <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="4275054974">
+                                    <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+                                    <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                                    <active dataType="Bool">true</active>
+                                    <gameobj dataType="ObjectRef">2332695397</gameobj>
+                                  </item>
                                   <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" id="3073754514">
                                     <_current />
                                     <_original dataType="Float">0.2</_original>
@@ -7986,12 +7991,6 @@
                                     <active dataType="Bool">true</active>
                                     <gameobj dataType="ObjectRef">2332695397</gameobj>
                                   </item>
-                                  <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" id="2766737968">
-                                    <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-                                    <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
-                                    <active dataType="Bool">true</active>
-                                    <gameobj dataType="ObjectRef">2332695397</gameobj>
-                                  </item>
                                   <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Button" id="3149813963">
                                     <_command />
                                     <_normalAlpha dataType="Float">0.1</_normalAlpha>
@@ -8020,7 +8019,7 @@
                                     <item dataType="ObjectRef">2389972615</item>
                                     <item dataType="ObjectRef">3801314677</item>
                                     <item dataType="ObjectRef">3073754514</item>
-                                    <item dataType="ObjectRef">2766737968</item>
+                                    <item dataType="ObjectRef">4275054974</item>
                                     <item dataType="ObjectRef">3149813963</item>
                                     <item dataType="ObjectRef">3215633051</item>
                                     <item dataType="ObjectRef">1565679207</item>
@@ -8118,6 +8117,12 @@
                                     </text>
                                     <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                                   </item>
+                                  <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="465835817">
+                                    <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+                                    <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                                    <active dataType="Bool">true</active>
+                                    <gameobj dataType="ObjectRef">2818443536</gameobj>
+                                  </item>
                                   <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" id="3559502653">
                                     <_current />
                                     <_original dataType="Float">0.2</_original>
@@ -8150,12 +8155,6 @@
                                     <active dataType="Bool">true</active>
                                     <gameobj dataType="ObjectRef">2818443536</gameobj>
                                   </item>
-                                  <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" id="3252486107">
-                                    <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-                                    <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
-                                    <active dataType="Bool">true</active>
-                                    <gameobj dataType="ObjectRef">2818443536</gameobj>
-                                  </item>
                                   <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Button" id="3635562102">
                                     <_command />
                                     <_normalAlpha dataType="Float">0.1</_normalAlpha>
@@ -8184,7 +8183,7 @@
                                     <item dataType="ObjectRef">2875720754</item>
                                     <item dataType="ObjectRef">4287062816</item>
                                     <item dataType="ObjectRef">3559502653</item>
-                                    <item dataType="ObjectRef">3252486107</item>
+                                    <item dataType="ObjectRef">465835817</item>
                                     <item dataType="ObjectRef">3635562102</item>
                                     <item dataType="ObjectRef">3701381190</item>
                                     <item dataType="ObjectRef">2051427346</item>
@@ -8446,6 +8445,11 @@
                         <spriteIndex dataType="Int">-1</spriteIndex>
                         <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                       </item>
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.ResizeListener" id="3189736355">
+                        <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+                        <active dataType="Bool">true</active>
+                        <gameobj dataType="ObjectRef">3567887967</gameobj>
+                      </item>
                       <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Background" id="2800871777">
                         <_ignoreLayout dataType="Bool">false</_ignoreLayout>
                         <_margins dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.UI.Margins">
@@ -8476,11 +8480,6 @@
                         <active dataType="Bool">true</active>
                         <gameobj dataType="ObjectRef">3567887967</gameobj>
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.ResizeListener" id="3216581981">
-                        <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-                        <active dataType="Bool">true</active>
-                        <gameobj dataType="ObjectRef">3567887967</gameobj>
-                      </item>
                     </_items>
                     <_size dataType="Int">5</_size>
                   </compList>
@@ -8499,7 +8498,7 @@
                         <item dataType="ObjectRef">2297806303</item>
                         <item dataType="ObjectRef">741539951</item>
                         <item dataType="ObjectRef">2800871777</item>
-                        <item dataType="ObjectRef">3216581981</item>
+                        <item dataType="ObjectRef">3189736355</item>
                       </values>
                     </body>
                   </compMap>
@@ -8706,11 +8705,11 @@
             <active dataType="Bool">true</active>
             <gameobj dataType="ObjectRef">3640246417</gameobj>
           </item>
-          <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.Glider" id="1958441516">
+          <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="1287638698">
             <active dataType="Bool">true</active>
             <gameobj dataType="ObjectRef">3640246417</gameobj>
           </item>
-          <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" id="4074288988">
+          <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.Glider" id="1958441516">
             <active dataType="Bool">true</active>
             <gameobj dataType="ObjectRef">3640246417</gameobj>
           </item>
@@ -8740,7 +8739,7 @@
             <item dataType="ObjectRef">3697523635</item>
             <item dataType="ObjectRef">813898401</item>
             <item dataType="ObjectRef">1958441516</item>
-            <item dataType="ObjectRef">4074288988</item>
+            <item dataType="ObjectRef">1287638698</item>
             <item dataType="ObjectRef">3046056998</item>
             <item dataType="ObjectRef">1798160269</item>
           </values>
@@ -8780,6 +8779,7 @@
     <item dataType="ObjectRef">4019020688</item>
     <item dataType="ObjectRef">3521227267</item>
     <item dataType="ObjectRef">3567887967</item>
+    <item dataType="ObjectRef">956795791</item>
     <item dataType="ObjectRef">193242382</item>
     <item dataType="ObjectRef">2736911692</item>
     <item dataType="ObjectRef">2719641341</item>
@@ -8788,9 +8788,6 @@
     <item dataType="ObjectRef">2904234483</item>
     <item dataType="ObjectRef">2558544094</item>
     <item dataType="ObjectRef">1461882199</item>
-    <item dataType="ObjectRef">956795791</item>
-    <item dataType="ObjectRef">2332695397</item>
-    <item dataType="ObjectRef">2818443536</item>
     <item dataType="ObjectRef">1604075701</item>
     <item dataType="ObjectRef">3273745389</item>
     <item dataType="ObjectRef">483686962</item>
@@ -8912,6 +8909,8 @@
     <item dataType="ObjectRef">2569549862</item>
     <item dataType="ObjectRef">669219302</item>
     <item dataType="ObjectRef">1337224178</item>
+    <item dataType="ObjectRef">2332695397</item>
+    <item dataType="ObjectRef">2818443536</item>
   </serializeObj>
   <visibilityStrategy dataType="Struct" type="Duality.Components.DefaultRendererVisibilityStrategy" id="2035693768" />
 </root>

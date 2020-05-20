@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{AFE883F3-72B4-4C7C-A1D1-44EDC09C8F6E}</ProjectGuid>
+    <ProjectGuid>{80E5E70F-456D-49A7-AE99-76F6E2982555}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Soulstone.Duality.Plugins.Cupboard</RootNamespace>
@@ -39,6 +39,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BlueInput.core">
+      <HintPath>..\..\..\Plugins\BlueInput.core.dll</HintPath>
+    </Reference>
     <Reference Include="Duality">
       <HintPath>..\..\..\Duality.dll</HintPath>
     </Reference>
@@ -66,9 +69,6 @@
     <Compile Include="Components\Game\GamePieces.cs" />
     <Compile Include="Components\Game\Pawn.cs" />
     <Compile Include="Components\Glider.cs" />
-    <Compile Include="Components\Input\KeyListener.cs" />
-    <Compile Include="Components\Input\MouseListener.cs" />
-    <Compile Include="Components\Input\ResizeListener.cs" />
     <Compile Include="Components\Loader.cs" />
     <Compile Include="Components\SceneSelector.cs" />
     <Compile Include="Components\Selection\ISelectable.cs" />
@@ -96,14 +96,6 @@
     <Compile Include="Game\IBoardLayout.cs" />
     <Compile Include="Game\IDiceLayout.cs" />
     <Compile Include="GroupFlags.cs" />
-    <Compile Include="Input\ICmpLocalInputListener.cs" />
-    <Compile Include="Input\ICmpMouseDragListener.cs" />
-    <Compile Include="Input\ICmpMouseWheelListener.cs" />
-    <Compile Include="Input\InputEventArgs.cs" />
-    <Compile Include="Input\ICmpKeyListener.cs" />
-    <Compile Include="Input\ICmpMouseListener.cs" />
-    <Compile Include="Input\InputManager.cs" />
-    <Compile Include="Input\ICmpResizeListener.cs" />
     <Compile Include="Multiplayer\BaseNetworker.cs" />
     <Compile Include="Multiplayer\GameNetworking.cs" />
     <Compile Include="Multiplayer\GameState.cs" />

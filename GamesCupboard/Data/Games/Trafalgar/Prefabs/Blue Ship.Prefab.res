@@ -54,6 +54,18 @@
           <spriteIndex dataType="Int">-1</spriteIndex>
           <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group0" value="1" />
         </item>
+        <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="2927207955">
+          <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+          <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+          <active dataType="Bool">true</active>
+          <gameobj dataType="ObjectRef">984848378</gameobj>
+        </item>
+        <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.KeyListener" id="2428905775">
+          <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+          <_x003C_RequestFocus_x003E_k__BackingField dataType="Bool">false</_x003C_RequestFocus_x003E_k__BackingField>
+          <active dataType="Bool">true</active>
+          <gameobj dataType="ObjectRef">984848378</gameobj>
+        </item>
         <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.Glider" id="3598010773">
           <_moveRate dataType="Float">10</_moveRate>
           <_rotationRate dataType="Float">0.15</_rotationRate>
@@ -63,20 +75,7 @@
           <active dataType="Bool">true</active>
           <gameobj dataType="ObjectRef">984848378</gameobj>
         </item>
-        <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" id="1418890949">
-          <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-          <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
-          <active dataType="Bool">true</active>
-          <gameobj dataType="ObjectRef">984848378</gameobj>
-        </item>
         <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.Draggable" id="390658959">
-          <active dataType="Bool">true</active>
-          <gameobj dataType="ObjectRef">984848378</gameobj>
-        </item>
-        <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.KeyListener" id="893663025">
-          <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-          <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
-          <_x003C_RequestFocus_x003E_k__BackingField dataType="Bool">false</_x003C_RequestFocus_x003E_k__BackingField>
           <active dataType="Bool">true</active>
           <gameobj dataType="ObjectRef">984848378</gameobj>
         </item>
@@ -99,20 +98,20 @@
         <keys dataType="Array" type="System.Object[]" id="3903423351">
           <item dataType="Type" id="2257858446" value="Duality.Components.Transform" />
           <item dataType="Type" id="1290175562" value="Duality.Components.Renderers.SpriteRenderer" />
-          <item dataType="Type" id="1079345342" value="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" />
+          <item dataType="Type" id="1079345342" value="Soulstone.Duality.Plugins.Blue.Input.MouseListener" />
           <item dataType="Type" id="4271131866" value="Soulstone.Duality.Plugins.Cupboard.Components.Glider" />
           <item dataType="Type" id="2964884334" value="Soulstone.Duality.Plugins.Cupboard.Components.Draggable" />
           <item dataType="Type" id="2916136042" value="Soulstone.Duality.Plugins.Cupboard.Components.Pawn" />
-          <item dataType="Type" id="3627713310" value="Soulstone.Duality.Plugins.Cupboard.Components.KeyListener" />
+          <item dataType="Type" id="3627713310" value="Soulstone.Duality.Plugins.Blue.Input.KeyListener" />
         </keys>
         <values dataType="Array" type="System.Object[]" id="1062858560">
           <item dataType="ObjectRef">1042125596</item>
           <item dataType="ObjectRef">2453467658</item>
-          <item dataType="ObjectRef">1418890949</item>
+          <item dataType="ObjectRef">2927207955</item>
           <item dataType="ObjectRef">3598010773</item>
           <item dataType="ObjectRef">390658959</item>
           <item dataType="ObjectRef">3437729526</item>
-          <item dataType="ObjectRef">893663025</item>
+          <item dataType="ObjectRef">2428905775</item>
         </values>
       </body>
     </compMap>

@@ -54,6 +54,12 @@
           <spriteIndex dataType="Int">-1</spriteIndex>
           <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
         </item>
+        <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="3293105284">
+          <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+          <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+          <active dataType="Bool">true</active>
+          <gameobj dataType="ObjectRef">1350745707</gameobj>
+        </item>
         <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" id="2091804824">
           <_current />
           <_original dataType="Float">0.2</_original>
@@ -86,6 +92,15 @@
           <active dataType="Bool">true</active>
           <gameobj dataType="ObjectRef">1350745707</gameobj>
         </item>
+        <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Button" id="2167864273">
+          <_command dataType="String">Roll</_command>
+          <_normalAlpha dataType="Float">0.1</_normalAlpha>
+          <_x003C_EffectDuration_x003E_k__BackingField dataType="Float">0.2</_x003C_EffectDuration_x003E_k__BackingField>
+          <_x003C_HoverAlpha_x003E_k__BackingField dataType="Float">0.2</_x003C_HoverAlpha_x003E_k__BackingField>
+          <_x003C_PressingAlpha_x003E_k__BackingField dataType="Float">0.4</_x003C_PressingAlpha_x003E_k__BackingField>
+          <active dataType="Bool">true</active>
+          <gameobj dataType="ObjectRef">1350745707</gameobj>
+        </item>
         <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.Game.Dice" id="2253143624">
           <_design dataType="Struct" type="Duality.ContentRef`1[[Soulstone.Duality.Plugins.Cupboard.Resources.DiceDesign]]">
             <contentPath dataType="String">Data\Dice\DiceDesign.DiceDesign.res</contentPath>
@@ -104,21 +119,6 @@
           <active dataType="Bool">true</active>
           <gameobj dataType="ObjectRef">1350745707</gameobj>
         </item>
-        <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" id="1784788278">
-          <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-          <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
-          <active dataType="Bool">true</active>
-          <gameobj dataType="ObjectRef">1350745707</gameobj>
-        </item>
-        <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Button" id="2167864273">
-          <_command dataType="String">Roll</_command>
-          <_normalAlpha dataType="Float">0.1</_normalAlpha>
-          <_x003C_EffectDuration_x003E_k__BackingField dataType="Float">0.2</_x003C_EffectDuration_x003E_k__BackingField>
-          <_x003C_HoverAlpha_x003E_k__BackingField dataType="Float">0.2</_x003C_HoverAlpha_x003E_k__BackingField>
-          <_x003C_PressingAlpha_x003E_k__BackingField dataType="Float">0.4</_x003C_PressingAlpha_x003E_k__BackingField>
-          <active dataType="Bool">true</active>
-          <gameobj dataType="ObjectRef">1350745707</gameobj>
-        </item>
       </_items>
       <_size dataType="Int">7</_size>
     </compList>
@@ -129,7 +129,7 @@
           <item dataType="Type" id="3272839552" value="Duality.Components.Transform" />
           <item dataType="Type" id="2497515726" value="Duality.Components.Renderers.SpriteRenderer" />
           <item dataType="Type" id="2046525212" value="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" />
-          <item dataType="Type" id="2386360786" value="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" />
+          <item dataType="Type" id="2386360786" value="Soulstone.Duality.Plugins.Blue.Input.MouseListener" />
           <item dataType="Type" id="1061540152" value="Soulstone.Duality.Plugins.Cupboard.Components.UI.Button" />
           <item dataType="Type" id="555036454" value="Soulstone.Duality.Plugins.Cupboard.Components.Game.Dice" />
           <item dataType="Type" id="4069579284" value="Soulstone.Duality.Plugins.Cupboard.Components.UI.Background" />
@@ -138,7 +138,7 @@
           <item dataType="ObjectRef">1408022925</item>
           <item dataType="ObjectRef">2819364987</item>
           <item dataType="ObjectRef">2091804824</item>
-          <item dataType="ObjectRef">1784788278</item>
+          <item dataType="ObjectRef">3293105284</item>
           <item dataType="ObjectRef">2167864273</item>
           <item dataType="ObjectRef">2253143624</item>
           <item dataType="ObjectRef">583729517</item>

@@ -11,6 +11,7 @@ using Duality.Components.Renderers;
 
 using Soulstone.Duality.Utility;
 
+using Soulstone.Duality.Plugins.Blue.Input;
 using Soulstone.Duality.Plugins.Cupboard.Properties;
 using Soulstone.Duality.Plugins.Cupboard.UI;
 

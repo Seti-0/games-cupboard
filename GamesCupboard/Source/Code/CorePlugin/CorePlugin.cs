@@ -9,7 +9,6 @@ using Duality.Resources;
 using Duality.Editor;
 
 using Soulstone.Duality.Plugins.Cupboard.UI;
-using Soulstone.Duality.Plugins.Cupboard.Input;
 
 namespace Soulstone.Duality.Plugins.Cupboard
 {

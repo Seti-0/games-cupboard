@@ -16,6 +16,8 @@ using Soulstone.Duality.Plugins.Cupboard.Properties;
 
 using Soulstone.Duality.Utility;
 
+using Soulstone.Duality.Plugins.Blue.Input;
+
 namespace Soulstone.Duality.Plugins.Cupboard.Components.UI
 {
     [EditorHintCategory(CupboardResNames.CategoryUI)]

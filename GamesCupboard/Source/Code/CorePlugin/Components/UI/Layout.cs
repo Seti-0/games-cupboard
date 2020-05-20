@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 using Duality;
 using Duality.Components;
-
 using Duality.Editor;
 
 using Soulstone.Duality.Utility;
 
+using Soulstone.Duality.Plugins.Blue.Input;
 using Soulstone.Duality.Plugins.Cupboard.Properties;
-using Soulstone.Duality.Plugins.Cupboard.Input;
 
 namespace Soulstone.Duality.Plugins.Cupboard.Components.UI
 {

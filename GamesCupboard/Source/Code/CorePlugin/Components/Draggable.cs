@@ -10,7 +10,7 @@ using Duality.Editor;
 
 using Soulstone.Duality.Utility;
 
-using Soulstone.Duality.Plugins.Cupboard.Input;
+using Soulstone.Duality.Plugins.Blue.Input;
 using Soulstone.Duality.Plugins.Cupboard.Multiplayer;
 using Soulstone.Duality.Plugins.Cupboard.Properties;
 

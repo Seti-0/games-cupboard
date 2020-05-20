@@ -123,7 +123,7 @@
                       <active dataType="Bool">true</active>
                       <gameobj dataType="ObjectRef">3827966439</gameobj>
                     </item>
-                    <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" id="4262009010">
+                    <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="1475358720">
                       <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
                       <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
                       <active dataType="Bool">true</active>
@@ -148,7 +148,7 @@
                       <item dataType="Type" id="3131634318" value="Duality.Components.Transform" />
                       <item dataType="Type" id="2092771402" value="Duality.Components.Renderers.SpriteRenderer" />
                       <item dataType="Type" id="3213029822" value="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" />
-                      <item dataType="Type" id="798239962" value="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" />
+                      <item dataType="Type" id="798239962" value="Soulstone.Duality.Plugins.Blue.Input.MouseListener" />
                       <item dataType="Type" id="1829275758" value="Soulstone.Duality.Plugins.Cupboard.Components.UI.Button" />
                       <item dataType="Type" id="3057846890" value="Duality.Components.Renderers.TextRenderer" />
                       <item dataType="Type" id="3307757086" value="Soulstone.Duality.Plugins.Cupboard.Components.UI.Background" />
@@ -157,7 +157,7 @@
                       <item dataType="ObjectRef">3885243657</item>
                       <item dataType="ObjectRef">1001618423</item>
                       <item dataType="ObjectRef">274058260</item>
-                      <item dataType="ObjectRef">4262009010</item>
+                      <item dataType="ObjectRef">1475358720</item>
                       <item dataType="ObjectRef">350117709</item>
                       <item dataType="ObjectRef">415936797</item>
                       <item dataType="ObjectRef">3060950249</item>
@@ -287,7 +287,7 @@
                       <active dataType="Bool">true</active>
                       <gameobj dataType="ObjectRef">3557312156</gameobj>
                     </item>
-                    <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" id="3991354727">
+                    <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="1204704437">
                       <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
                       <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
                       <active dataType="Bool">true</active>
@@ -321,7 +321,7 @@
                       <item dataType="ObjectRef">3614589374</item>
                       <item dataType="ObjectRef">730964140</item>
                       <item dataType="ObjectRef">3403977</item>
-                      <item dataType="ObjectRef">3991354727</item>
+                      <item dataType="ObjectRef">1204704437</item>
                       <item dataType="ObjectRef">79463426</item>
                       <item dataType="ObjectRef">145282514</item>
                       <item dataType="ObjectRef">2790295966</item>
@@ -375,7 +375,7 @@
                 <active dataType="Bool">true</active>
                 <gameobj dataType="ObjectRef">1317032786</gameobj>
               </item>
-              <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.ResizeListener" id="965726800">
+              <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.ResizeListener" id="938881174">
                 <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
                 <active dataType="Bool">true</active>
                 <gameobj dataType="ObjectRef">1317032786</gameobj>
@@ -389,12 +389,12 @@
               <keys dataType="Array" type="System.Object[]" id="3412421568">
                 <item dataType="ObjectRef">3131634318</item>
                 <item dataType="Type" id="972686108" value="Soulstone.Duality.Plugins.Cupboard.Components.UI.Layout" />
-                <item dataType="Type" id="327790102" value="Soulstone.Duality.Plugins.Cupboard.Components.ResizeListener" />
+                <item dataType="Type" id="327790102" value="Soulstone.Duality.Plugins.Blue.Input.ResizeListener" />
               </keys>
               <values dataType="Array" type="System.Object[]" id="871906382">
                 <item dataType="ObjectRef">1374310004</item>
                 <item dataType="ObjectRef">46951122</item>
-                <item dataType="ObjectRef">965726800</item>
+                <item dataType="ObjectRef">938881174</item>
               </values>
             </body>
           </compMap>
@@ -863,7 +863,7 @@
                       <active dataType="Bool">true</active>
                       <gameobj dataType="ObjectRef">267987708</gameobj>
                     </item>
-                    <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" id="702030279">
+                    <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="2210347285">
                       <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
                       <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
                       <active dataType="Bool">true</active>
@@ -897,7 +897,7 @@
                       <item dataType="ObjectRef">325264926</item>
                       <item dataType="ObjectRef">1736606988</item>
                       <item dataType="ObjectRef">1009046825</item>
-                      <item dataType="ObjectRef">702030279</item>
+                      <item dataType="ObjectRef">2210347285</item>
                       <item dataType="ObjectRef">1085106274</item>
                       <item dataType="ObjectRef">1150925362</item>
                       <item dataType="ObjectRef">3795938814</item>
@@ -951,7 +951,7 @@
                 <active dataType="Bool">true</active>
                 <gameobj dataType="ObjectRef">2632723086</gameobj>
               </item>
-              <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.ResizeListener" id="2281417100">
+              <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.ResizeListener" id="2254571474">
                 <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
                 <active dataType="Bool">true</active>
                 <gameobj dataType="ObjectRef">2632723086</gameobj>
@@ -970,7 +970,7 @@
               <values dataType="Array" type="System.Object[]" id="913348494">
                 <item dataType="ObjectRef">2690000304</item>
                 <item dataType="ObjectRef">1362641422</item>
-                <item dataType="ObjectRef">2281417100</item>
+                <item dataType="ObjectRef">2254571474</item>
               </values>
             </body>
           </compMap>
@@ -1105,7 +1105,7 @@
                             <active dataType="Bool">true</active>
                             <gameobj dataType="ObjectRef">710296280</gameobj>
                           </item>
-                          <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" id="1144338851">
+                          <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="2652655857">
                             <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
                             <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
                             <active dataType="Bool">true</active>
@@ -1139,7 +1139,7 @@
                             <item dataType="ObjectRef">767573498</item>
                             <item dataType="ObjectRef">2178915560</item>
                             <item dataType="ObjectRef">1451355397</item>
-                            <item dataType="ObjectRef">1144338851</item>
+                            <item dataType="ObjectRef">2652655857</item>
                             <item dataType="ObjectRef">1527414846</item>
                             <item dataType="ObjectRef">1593233934</item>
                             <item dataType="ObjectRef">4238247386</item>
@@ -1269,7 +1269,7 @@
                             <active dataType="Bool">true</active>
                             <gameobj dataType="ObjectRef">3517209172</gameobj>
                           </item>
-                          <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" id="3951251743">
+                          <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="1164601453">
                             <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
                             <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
                             <active dataType="Bool">true</active>
@@ -1303,7 +1303,7 @@
                             <item dataType="ObjectRef">3574486390</item>
                             <item dataType="ObjectRef">690861156</item>
                             <item dataType="ObjectRef">4258268289</item>
-                            <item dataType="ObjectRef">3951251743</item>
+                            <item dataType="ObjectRef">1164601453</item>
                             <item dataType="ObjectRef">39360442</item>
                             <item dataType="ObjectRef">105179530</item>
                             <item dataType="ObjectRef">2750192982</item>
@@ -1595,7 +1595,7 @@
                 <active dataType="Bool">true</active>
                 <gameobj dataType="ObjectRef">3279126950</gameobj>
               </item>
-              <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.ResizeListener" id="2927820964">
+              <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.ResizeListener" id="2900975338">
                 <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
                 <active dataType="Bool">true</active>
                 <gameobj dataType="ObjectRef">3279126950</gameobj>
@@ -1618,7 +1618,7 @@
                 <item dataType="ObjectRef">2009045286</item>
                 <item dataType="ObjectRef">452778934</item>
                 <item dataType="ObjectRef">2512110760</item>
-                <item dataType="ObjectRef">2927820964</item>
+                <item dataType="ObjectRef">2900975338</item>
               </values>
             </body>
           </compMap>

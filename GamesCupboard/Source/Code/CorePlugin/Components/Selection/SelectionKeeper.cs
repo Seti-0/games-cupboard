@@ -11,7 +11,7 @@ using Duality.Editor;
 
 using Soulstone.Duality.Utility;
 
-using Soulstone.Duality.Plugins.Cupboard.Input;
+using Soulstone.Duality.Plugins.Blue.Input;
 using Soulstone.Duality.Plugins.Cupboard.Properties;
 
 namespace Soulstone.Duality.Plugins.Cupboard.Components.Selection
@@ -59,7 +59,7 @@ namespace Soulstone.Duality.Plugins.Cupboard.Components.Selection
 
         private void _mouseListener_ButtonDown(object sender, MouseButtonEventArgs e)
         {
-            _buttonDownFocus = CupboardApp.Input.MouseFocus as MouseListener;
+            _buttonDownFocus = BlueInputApp.Input.MouseFocus as MouseListener;
 
             var selectable = _buttonDownFocus?.GameObj?.GetComponent<ISelectable>();
 
@@ -69,7 +69,7 @@ namespace Soulstone.Duality.Plugins.Cupboard.Components.Selection
 
         private void _mouseListener_ButtonUp(object sender, MouseButtonEventArgs e)
         {
-            var focus = CupboardApp.Input.MouseFocus;
+            var focus = BlueInputApp.Input.MouseFocus;
 
             // Both the button down and button up foci are checked. Otherwise, dragging an object 
             // would deselect it if the mouse moves ahead of the object being dragged. 

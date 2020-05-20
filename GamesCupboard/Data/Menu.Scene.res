@@ -100,7 +100,7 @@
                     <Z dataType="Float">0</Z>
                   </pos>
                   <posAbs dataType="Struct" type="Duality.Vector3">
-                    <X dataType="Float">562.5</X>
+                    <X dataType="Float">577</X>
                     <Y dataType="Float">523.5</Y>
                     <Z dataType="Float">0</Z>
                   </posAbs>
@@ -162,6 +162,12 @@
                   </text>
                   <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                 </item>
+                <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="249184718">
+                  <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+                  <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">2601792437</gameobj>
+                </item>
                 <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" id="3342851554">
                   <_current />
                   <_original dataType="Float">0.2</_original>
@@ -194,12 +200,6 @@
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">2601792437</gameobj>
                 </item>
-                <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" id="3035835008">
-                  <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-                  <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
-                  <active dataType="Bool">true</active>
-                  <gameobj dataType="ObjectRef">2601792437</gameobj>
-                </item>
                 <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Button" id="3418911003">
                   <_command />
                   <_normalAlpha dataType="Float">0.1</_normalAlpha>
@@ -219,7 +219,7 @@
                   <item dataType="ObjectRef">922529956</item>
                   <item dataType="Type" id="931562414" value="Duality.Components.Renderers.SpriteRenderer" />
                   <item dataType="Type" id="536252106" value="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" />
-                  <item dataType="Type" id="3937731870" value="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" />
+                  <item dataType="Type" id="3937731870" value="Soulstone.Duality.Plugins.Blue.Input.MouseListener" />
                   <item dataType="Type" id="331021786" value="Soulstone.Duality.Plugins.Cupboard.Components.UI.Button" />
                   <item dataType="Type" id="2568003918" value="Duality.Components.Renderers.TextRenderer" />
                   <item dataType="Type" id="3144330218" value="Soulstone.Duality.Plugins.Cupboard.Components.UI.Background" />
@@ -228,7 +228,7 @@
                   <item dataType="ObjectRef">2659069655</item>
                   <item dataType="ObjectRef">4070411717</item>
                   <item dataType="ObjectRef">3342851554</item>
-                  <item dataType="ObjectRef">3035835008</item>
+                  <item dataType="ObjectRef">249184718</item>
                   <item dataType="ObjectRef">3418911003</item>
                   <item dataType="ObjectRef">3484730091</item>
                   <item dataType="ObjectRef">1834776247</item>
@@ -264,7 +264,7 @@
                     <Z dataType="Float">0</Z>
                   </pos>
                   <posAbs dataType="Struct" type="Duality.Vector3">
-                    <X dataType="Float">562.5</X>
+                    <X dataType="Float">577</X>
                     <Y dataType="Float">585.5</Y>
                     <Z dataType="Float">0</Z>
                   </posAbs>
@@ -433,7 +433,7 @@
                     <Z dataType="Float">0</Z>
                   </pos>
                   <posAbs dataType="Struct" type="Duality.Vector3">
-                    <X dataType="Float">562.5</X>
+                    <X dataType="Float">577</X>
                     <Y dataType="Float">637.5</Y>
                     <Z dataType="Float">0</Z>
                   </posAbs>
@@ -606,7 +606,7 @@
                           <Z dataType="Float">0</Z>
                         </pos>
                         <posAbs dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">516.5</X>
+                          <X dataType="Float">531</X>
                           <Y dataType="Float">397.5</Y>
                           <Z dataType="Float">0</Z>
                         </posAbs>
@@ -668,6 +668,12 @@
                         </text>
                         <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                       </item>
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="3212367677">
+                        <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+                        <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                        <active dataType="Bool">true</active>
+                        <gameobj dataType="ObjectRef">1270008100</gameobj>
+                      </item>
                       <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" id="2011067217">
                         <_current />
                         <_original dataType="Float">0.2</_original>
@@ -700,12 +706,6 @@
                         <active dataType="Bool">true</active>
                         <gameobj dataType="ObjectRef">1270008100</gameobj>
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" id="1704050671">
-                        <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-                        <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
-                        <active dataType="Bool">true</active>
-                        <gameobj dataType="ObjectRef">1270008100</gameobj>
-                      </item>
                       <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Button" id="2087126666">
                         <_command />
                         <_normalAlpha dataType="Float">0.1</_normalAlpha>
@@ -734,7 +734,7 @@
                         <item dataType="ObjectRef">1327285318</item>
                         <item dataType="ObjectRef">2738627380</item>
                         <item dataType="ObjectRef">2011067217</item>
-                        <item dataType="ObjectRef">1704050671</item>
+                        <item dataType="ObjectRef">3212367677</item>
                         <item dataType="ObjectRef">2087126666</item>
                         <item dataType="ObjectRef">2152945754</item>
                         <item dataType="ObjectRef">502991910</item>
@@ -770,7 +770,7 @@
                           <Z dataType="Float">0</Z>
                         </pos>
                         <posAbs dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">608.5</X>
+                          <X dataType="Float">623</X>
                           <Y dataType="Float">397.5</Y>
                           <Z dataType="Float">0</Z>
                         </posAbs>
@@ -832,6 +832,12 @@
                         </text>
                         <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                       </item>
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="4242637255">
+                        <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+                        <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                        <active dataType="Bool">true</active>
+                        <gameobj dataType="ObjectRef">2300277678</gameobj>
+                      </item>
                       <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" id="3041336795">
                         <_current />
                         <_original dataType="Float">0.2</_original>
@@ -864,12 +870,6 @@
                         <active dataType="Bool">true</active>
                         <gameobj dataType="ObjectRef">2300277678</gameobj>
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" id="2734320249">
-                        <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-                        <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
-                        <active dataType="Bool">true</active>
-                        <gameobj dataType="ObjectRef">2300277678</gameobj>
-                      </item>
                       <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Button" id="3117396244">
                         <_command />
                         <_normalAlpha dataType="Float">0.1</_normalAlpha>
@@ -898,7 +898,7 @@
                         <item dataType="ObjectRef">2357554896</item>
                         <item dataType="ObjectRef">3768896958</item>
                         <item dataType="ObjectRef">3041336795</item>
-                        <item dataType="ObjectRef">2734320249</item>
+                        <item dataType="ObjectRef">4242637255</item>
                         <item dataType="ObjectRef">3117396244</item>
                         <item dataType="ObjectRef">3183215332</item>
                         <item dataType="ObjectRef">1533261488</item>
@@ -934,7 +934,7 @@
                     <Z dataType="Float">0</Z>
                   </pos>
                   <posAbs dataType="Struct" type="Duality.Vector3">
-                    <X dataType="Float">562.5</X>
+                    <X dataType="Float">577</X>
                     <Y dataType="Float">397.5</Y>
                     <Z dataType="Float">0</Z>
                   </posAbs>
@@ -997,7 +997,7 @@
                     <Z dataType="Float">0</Z>
                   </pos>
                   <posAbs dataType="Struct" type="Duality.Vector3">
-                    <X dataType="Float">562.5</X>
+                    <X dataType="Float">577</X>
                     <Y dataType="Float">460.5</Y>
                     <Z dataType="Float">0</Z>
                   </posAbs>
@@ -1059,14 +1059,26 @@
                   </text>
                   <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                 </item>
+                <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="3086281951">
+                  <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+                  <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">1143922374</gameobj>
+                </item>
+                <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.KeyListener" id="2587979771">
+                  <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                  <_x003C_RequestFocus_x003E_k__BackingField dataType="Bool">false</_x003C_RequestFocus_x003E_k__BackingField>
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">1143922374</gameobj>
+                </item>
                 <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" id="1884981491">
                   <_current />
                   <_original dataType="Float">0.2</_original>
                   <_queue dataType="Struct" type="System.Collections.Generic.Queue`1[[Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step]]" id="4183604423">
                     <_array dataType="Array" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step[]" id="28919502" length="8" />
-                    <_head dataType="Int">5</_head>
+                    <_head dataType="Int">7</_head>
                     <_size dataType="Int">0</_size>
-                    <_tail dataType="Int">5</_tail>
+                    <_tail dataType="Int">7</_tail>
                   </_queue>
                   <_timeRemaining dataType="Float">0</_timeRemaining>
                   <active dataType="Bool">true</active>
@@ -1088,19 +1100,6 @@
                   </_padding>
                   <_place dataType="Int">3</_place>
                   <_x003C_Name_x003E_k__BackingField />
-                  <active dataType="Bool">true</active>
-                  <gameobj dataType="ObjectRef">1143922374</gameobj>
-                </item>
-                <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" id="1577964945">
-                  <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-                  <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
-                  <active dataType="Bool">true</active>
-                  <gameobj dataType="ObjectRef">1143922374</gameobj>
-                </item>
-                <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.KeyListener" id="1052737021">
-                  <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-                  <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
-                  <_x003C_RequestFocus_x003E_k__BackingField dataType="Bool">false</_x003C_RequestFocus_x003E_k__BackingField>
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">1143922374</gameobj>
                 </item>
@@ -1128,7 +1127,7 @@
                   <item dataType="ObjectRef">931562414</item>
                   <item dataType="ObjectRef">536252106</item>
                   <item dataType="ObjectRef">3937731870</item>
-                  <item dataType="Type" id="3460905276" value="Soulstone.Duality.Plugins.Cupboard.Components.KeyListener" />
+                  <item dataType="Type" id="3460905276" value="Soulstone.Duality.Plugins.Blue.Input.KeyListener" />
                   <item dataType="ObjectRef">2568003918</item>
                   <item dataType="Type" id="35996566" value="Soulstone.Duality.Plugins.Cupboard.Components.UI.TextEditor" />
                   <item dataType="ObjectRef">3144330218</item>
@@ -1137,8 +1136,8 @@
                   <item dataType="ObjectRef">1201199592</item>
                   <item dataType="ObjectRef">2612541654</item>
                   <item dataType="ObjectRef">1884981491</item>
-                  <item dataType="ObjectRef">1577964945</item>
-                  <item dataType="ObjectRef">1052737021</item>
+                  <item dataType="ObjectRef">3086281951</item>
+                  <item dataType="ObjectRef">2587979771</item>
                   <item dataType="ObjectRef">2026860028</item>
                   <item dataType="ObjectRef">3441150580</item>
                   <item dataType="ObjectRef">376906184</item>
@@ -1174,7 +1173,7 @@
                     <Z dataType="Float">0</Z>
                   </pos>
                   <posAbs dataType="Struct" type="Duality.Vector3">
-                    <X dataType="Float">562.5</X>
+                    <X dataType="Float">577</X>
                     <Y dataType="Float">280.5</Y>
                     <Z dataType="Float">0</Z>
                   </posAbs>
@@ -1236,14 +1235,26 @@
                   </text>
                   <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                 </item>
+                <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="872313589">
+                  <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+                  <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">3224921308</gameobj>
+                </item>
+                <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.KeyListener" id="374011409">
+                  <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                  <_x003C_RequestFocus_x003E_k__BackingField dataType="Bool">false</_x003C_RequestFocus_x003E_k__BackingField>
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">3224921308</gameobj>
+                </item>
                 <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" id="3965980425">
                   <_current />
                   <_original dataType="Float">0.2</_original>
                   <_queue dataType="Struct" type="System.Collections.Generic.Queue`1[[Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step]]" id="86637749">
                     <_array dataType="Array" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step[]" id="3875626742" length="8" />
-                    <_head dataType="Int">5</_head>
+                    <_head dataType="Int">7</_head>
                     <_size dataType="Int">0</_size>
-                    <_tail dataType="Int">5</_tail>
+                    <_tail dataType="Int">7</_tail>
                   </_queue>
                   <_timeRemaining dataType="Float">0</_timeRemaining>
                   <active dataType="Bool">true</active>
@@ -1265,19 +1276,6 @@
                   </_padding>
                   <_place dataType="Int">0</_place>
                   <_x003C_Name_x003E_k__BackingField />
-                  <active dataType="Bool">true</active>
-                  <gameobj dataType="ObjectRef">3224921308</gameobj>
-                </item>
-                <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" id="3658963879">
-                  <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-                  <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
-                  <active dataType="Bool">true</active>
-                  <gameobj dataType="ObjectRef">3224921308</gameobj>
-                </item>
-                <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.KeyListener" id="3133735955">
-                  <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-                  <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
-                  <_x003C_RequestFocus_x003E_k__BackingField dataType="Bool">false</_x003C_RequestFocus_x003E_k__BackingField>
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">3224921308</gameobj>
                 </item>
@@ -1314,8 +1312,8 @@
                   <item dataType="ObjectRef">3282198526</item>
                   <item dataType="ObjectRef">398573292</item>
                   <item dataType="ObjectRef">3965980425</item>
-                  <item dataType="ObjectRef">3658963879</item>
-                  <item dataType="ObjectRef">3133735955</item>
+                  <item dataType="ObjectRef">872313589</item>
+                  <item dataType="ObjectRef">374011409</item>
                   <item dataType="ObjectRef">4107858962</item>
                   <item dataType="ObjectRef">1227182218</item>
                   <item dataType="ObjectRef">2457905118</item>
@@ -1351,7 +1349,7 @@
                     <Z dataType="Float">0</Z>
                   </pos>
                   <posAbs dataType="Struct" type="Duality.Vector3">
-                    <X dataType="Float">562.5</X>
+                    <X dataType="Float">577</X>
                     <Y dataType="Float">334.5</Y>
                     <Z dataType="Float">0</Z>
                   </posAbs>
@@ -1413,14 +1411,26 @@
                   </text>
                   <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                 </item>
+                <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="345478839">
+                  <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+                  <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">2698086558</gameobj>
+                </item>
+                <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.KeyListener" id="4142143955">
+                  <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                  <_x003C_RequestFocus_x003E_k__BackingField dataType="Bool">true</_x003C_RequestFocus_x003E_k__BackingField>
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">2698086558</gameobj>
+                </item>
                 <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" id="3439145675">
                   <_current />
                   <_original dataType="Float">0.4</_original>
                   <_queue dataType="Struct" type="System.Collections.Generic.Queue`1[[Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step]]" id="3063216223">
                     <_array dataType="Array" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step[]" id="2823477358" length="8" />
-                    <_head dataType="Int">7</_head>
+                    <_head dataType="Int">3</_head>
                     <_size dataType="Int">0</_size>
-                    <_tail dataType="Int">7</_tail>
+                    <_tail dataType="Int">3</_tail>
                   </_queue>
                   <_timeRemaining dataType="Float">0</_timeRemaining>
                   <active dataType="Bool">true</active>
@@ -1442,19 +1452,6 @@
                   </_padding>
                   <_place dataType="Int">1</_place>
                   <_x003C_Name_x003E_k__BackingField />
-                  <active dataType="Bool">true</active>
-                  <gameobj dataType="ObjectRef">2698086558</gameobj>
-                </item>
-                <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" id="3132129129">
-                  <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-                  <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
-                  <active dataType="Bool">true</active>
-                  <gameobj dataType="ObjectRef">2698086558</gameobj>
-                </item>
-                <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.KeyListener" id="2606901205">
-                  <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-                  <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
-                  <_x003C_RequestFocus_x003E_k__BackingField dataType="Bool">true</_x003C_RequestFocus_x003E_k__BackingField>
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">2698086558</gameobj>
                 </item>
@@ -1491,8 +1488,8 @@
                   <item dataType="ObjectRef">2755363776</item>
                   <item dataType="ObjectRef">4166705838</item>
                   <item dataType="ObjectRef">3439145675</item>
-                  <item dataType="ObjectRef">3132129129</item>
-                  <item dataType="ObjectRef">2606901205</item>
+                  <item dataType="ObjectRef">345478839</item>
+                  <item dataType="ObjectRef">4142143955</item>
                   <item dataType="ObjectRef">3581024212</item>
                   <item dataType="ObjectRef">700347468</item>
                   <item dataType="ObjectRef">1931070368</item>
@@ -1523,17 +1520,22 @@
             <gameobj dataType="ObjectRef">600766575</gameobj>
             <ignoreParent dataType="Bool">false</ignoreParent>
             <pos dataType="Struct" type="Duality.Vector3">
-              <X dataType="Float">562.5</X>
+              <X dataType="Float">577</X>
               <Y dataType="Float">458.5</Y>
               <Z dataType="Float">0</Z>
             </pos>
             <posAbs dataType="Struct" type="Duality.Vector3">
-              <X dataType="Float">562.5</X>
+              <X dataType="Float">577</X>
               <Y dataType="Float">458.5</Y>
               <Z dataType="Float">0</Z>
             </posAbs>
             <scale dataType="Float">1</scale>
             <scaleAbs dataType="Float">1</scaleAbs>
+          </item>
+          <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.ResizeListener" id="222614963">
+            <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+            <active dataType="Bool">true</active>
+            <gameobj dataType="ObjectRef">600766575</gameobj>
           </item>
           <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Layout" id="3625652207">
             <_ignoreLayout dataType="Bool">false</_ignoreLayout>
@@ -1553,11 +1555,6 @@
             <active dataType="Bool">true</active>
             <gameobj dataType="ObjectRef">600766575</gameobj>
           </item>
-          <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.ResizeListener" id="249460589">
-            <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-            <active dataType="Bool">true</active>
-            <gameobj dataType="ObjectRef">600766575</gameobj>
-          </item>
         </_items>
         <_size dataType="Int">4</_size>
       </compList>
@@ -1567,13 +1564,13 @@
           <keys dataType="Array" type="System.Object[]" id="2416242708">
             <item dataType="ObjectRef">922529956</item>
             <item dataType="ObjectRef">3643859044</item>
-            <item dataType="Type" id="3307355748" value="Soulstone.Duality.Plugins.Cupboard.Components.ResizeListener" />
+            <item dataType="Type" id="3307355748" value="Soulstone.Duality.Plugins.Blue.Input.ResizeListener" />
             <item dataType="Type" id="2515361814" value="Soulstone.Duality.Plugins.Cupboard.Components.UI.Contexts.MainMenuContext" />
           </keys>
           <values dataType="Array" type="System.Object[]" id="713374518">
             <item dataType="ObjectRef">658043793</item>
             <item dataType="ObjectRef">3625652207</item>
-            <item dataType="ObjectRef">249460589</item>
+            <item dataType="ObjectRef">222614963</item>
             <item dataType="ObjectRef">1455214648</item>
           </values>
         </body>

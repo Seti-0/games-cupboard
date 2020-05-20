@@ -115,7 +115,7 @@
                 <active dataType="Bool">true</active>
                 <gameobj dataType="ObjectRef">333561040</gameobj>
               </item>
-              <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" id="767603611">
+              <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="2275920617">
                 <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
                 <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
                 <active dataType="Bool">true</active>
@@ -140,7 +140,7 @@
                 <item dataType="Type" id="1113523456" value="Duality.Components.Transform" />
                 <item dataType="Type" id="433578446" value="Duality.Components.Renderers.SpriteRenderer" />
                 <item dataType="Type" id="468420508" value="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" />
-                <item dataType="Type" id="1876513490" value="Soulstone.Duality.Plugins.Cupboard.Components.MouseListener" />
+                <item dataType="Type" id="1876513490" value="Soulstone.Duality.Plugins.Blue.Input.MouseListener" />
                 <item dataType="Type" id="3279080376" value="Soulstone.Duality.Plugins.Cupboard.Components.UI.Button" />
                 <item dataType="Type" id="403469862" value="Duality.Components.Renderers.TextRenderer" />
                 <item dataType="Type" id="1771964820" value="Soulstone.Duality.Plugins.Cupboard.Components.UI.Background" />
@@ -149,7 +149,7 @@
                 <item dataType="ObjectRef">390838258</item>
                 <item dataType="ObjectRef">1802180320</item>
                 <item dataType="ObjectRef">1074620157</item>
-                <item dataType="ObjectRef">767603611</item>
+                <item dataType="ObjectRef">2275920617</item>
                 <item dataType="ObjectRef">1150679606</item>
                 <item dataType="ObjectRef">1216498694</item>
                 <item dataType="ObjectRef">3861512146</item>
