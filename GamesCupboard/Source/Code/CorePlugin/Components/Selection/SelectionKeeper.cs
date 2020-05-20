@@ -59,7 +59,7 @@ namespace Soulstone.Duality.Plugins.Cupboard.Components.Selection
 
         private void _mouseListener_ButtonDown(object sender, MouseButtonEventArgs e)
         {
-            _buttonDownFocus = CupboardApp.Input.MouseFocus;
+            _buttonDownFocus = CupboardApp.Input.MouseFocus as MouseListener;
 
             var selectable = _buttonDownFocus?.GameObj?.GetComponent<ISelectable>();
 

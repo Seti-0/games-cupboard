@@ -9,16 +9,15 @@ using Duality.Input;
 
 using Duality.Editor;
 using Soulstone.Duality.Plugins.Cupboard.Properties;
+using Soulstone.Duality.Plugins.Cupboard.Input;
 
 namespace Soulstone.Duality.Plugins.Cupboard.Components
 {
     [EditorHintCategory(CupboardResNames.CateogoryInput)]
     [RequiredComponent(typeof(MouseListener))]
-    public class KeyListener : Component
+    public class KeyListener : Component, ICmpKeyListener
     {
         public bool Global { get; set; } = false;
-
-        public bool EditorUpdatable { get; set; } = false;
 
         public bool RequestFocus { get; set; } = false;
 

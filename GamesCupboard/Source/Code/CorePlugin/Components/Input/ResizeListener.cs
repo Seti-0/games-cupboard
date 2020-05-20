@@ -14,7 +14,7 @@ using Soulstone.Duality.Plugins.Cupboard.Input;
 namespace Soulstone.Duality.Plugins.Cupboard.Components
 {
     [EditorHintCategory(CupboardResNames.CateogoryInput)]
-    public class ResizeListener : Component
+    public class ResizeListener : Component, ICmpResizeListener
     {
         public bool EditorUpdatable { get; set; } = false;
 

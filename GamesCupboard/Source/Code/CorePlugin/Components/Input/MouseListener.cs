@@ -14,7 +14,7 @@ using Soulstone.Duality.Plugins.Cupboard.Input;
 namespace Soulstone.Duality.Plugins.Cupboard.Components
 {
     [EditorHintCategory(CupboardResNames.CateogoryInput)]
-    public class MouseListener : Component
+    public class MouseListener : Component, ICmpMouseListener, ICmpMouseDragListener, ICmpMouseWheelListener
     {
         public bool Global { get; set; } = false;
 
@@ -82,12 +82,12 @@ namespace Soulstone.Duality.Plugins.Cupboard.Components
         }
         #endregion
 
-        public void OnEntered(EventArgs args)
+        public void OnGainedFocus(EventArgs args)
         {
             _entered?.Invoke(this, args);
         }
 
-        public void OnExited(EventArgs args)
+        public void OnLostFocus(EventArgs args)
         {
             _exited?.Invoke(this, args);
         }

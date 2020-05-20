@@ -96,7 +96,14 @@
     <Compile Include="Game\IBoardLayout.cs" />
     <Compile Include="Game\IDiceLayout.cs" />
     <Compile Include="GroupFlags.cs" />
+    <Compile Include="Input\ICmpLocalInputListener.cs" />
+    <Compile Include="Input\ICmpMouseDragListener.cs" />
+    <Compile Include="Input\ICmpMouseWheelListener.cs" />
+    <Compile Include="Input\InputEventArgs.cs" />
+    <Compile Include="Input\ICmpKeyListener.cs" />
+    <Compile Include="Input\ICmpMouseListener.cs" />
     <Compile Include="Input\InputManager.cs" />
+    <Compile Include="Input\ICmpResizeListener.cs" />
     <Compile Include="Multiplayer\BaseNetworker.cs" />
     <Compile Include="Multiplayer\GameNetworking.cs" />
     <Compile Include="Multiplayer\GameState.cs" />

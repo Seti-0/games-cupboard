@@ -221,12 +221,13 @@ namespace Soulstone.Duality.Plugins.Cupboard.Components
         {
             if (Warnings.Inactive(this)) return;
 
+            var dragTarget = CupboardApp.Input.DragTarget as Component;
+
             // The second condition is a quick hack, there should be a more flexible way to check for this.
-            if (CupboardApp.Input.DragTarget == null || CupboardApp.Input.DragTarget?.GameObj.GetComponent<Draggable>() == null)
+            if (dragTarget == null || dragTarget?.GameObj.GetComponent<Draggable>() == null)
                 ScrollAgainstMouseDrag(e.Pos, e.Origin);
             else
             {
-                var dragTarget = CupboardApp.Input.DragTarget;
                 var renderer = dragTarget.GameObj?.GetComponent<Renderer>();
                 if (Warnings.NullOrDisposed(renderer)) return;
                 CheckBounds(renderer);

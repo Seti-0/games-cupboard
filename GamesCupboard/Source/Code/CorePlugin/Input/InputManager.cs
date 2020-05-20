@@ -10,36 +10,36 @@ using Duality.Input;
 using Duality.Components;
 using Duality.Resources;
 
-using Soulstone.Duality.Plugins.Cupboard.Components;
-
 namespace Soulstone.Duality.Plugins.Cupboard.Input
 {
-    public class ResizeEventArgs : EventArgs
+    internal class InputFocusCollection
     {
-        public Vector2 OldSize;
-        public Vector2 NewSize;
+        private readonly Dictionary<Type, object> _focuses = new Dictionary<Type, object>();
 
-        public ResizeEventArgs(Vector2 oldSize, Vector2 newSize)
+        public void Clear()
         {
-            OldSize = oldSize;
-            NewSize = newSize;
+            _focuses.Clear();
         }
-    }
 
-    public class MouseDragEventArgs : MouseEventArgs
-    {
-        public Vector2 Origin;
-        public Vector2 Vel;
-        public MouseButton Button;
-        public bool IsPressed;
-
-        public MouseDragEventArgs(MouseInput inputChannel, Vector2 pos, MouseButton button, Vector2 vel, Vector2 origin) : base(inputChannel, pos)
+        public void ClearFocus<T>()
         {
-            Vel = vel;
-            Button = button;
-            Origin = origin;
+            _focuses.Remove(typeof(T));
+        }
 
-            IsPressed = DualityApp.Mouse.ButtonPressed(button);
+        public void SetFocus<T>(T newFocus)
+        {
+            ClearFocus<T>();
+
+            if (newFocus != null)
+                _focuses.Add(typeof(T), newFocus);
+        }
+
+        public T GetFocus<T>()
+        {
+            if (!_focuses.TryGetValue(typeof(T), out object result))
+                return default;
+
+            return (T) result;
         }
     }
 
@@ -48,50 +48,38 @@ namespace Soulstone.Duality.Plugins.Cupboard.Input
         // I'm not sure DontSerialize is relevant here, would Duality ever serialize this?
         // Better safe than sorry, though.
 
+        [DontSerialize] private InputFocusCollection _focuses = new InputFocusCollection();
+
         [DontSerialize] private bool _dragging;
+
         [DontSerialize] private Vector2 _currentDragOrigin;
         [DontSerialize] private MouseButton _currentDragButton;
         [DontSerialize] private MouseInput _currentDragInput;
-        [DontSerialize] private MouseListener _currentDragTarget;
-
-        [DontSerialize] private MouseListener _mouseFocus;
-        [DontSerialize] private KeyListener _keyFocus;
+        [DontSerialize] private ICmpMouseDragListener _currentDragTarget;
 
         [DontSerialize] private Vector2 _lastWindowSize;
 
-        public MouseListener MouseFocus
+        public ICmpMouseListener MouseFocus
         {
-            get => _mouseFocus;
+            get => _focuses.GetFocus<ICmpMouseListener>();
         }
 
-        public MouseListener DragTarget
+        public ICmpMouseDragListener DragTarget
         {
-            get => _currentDragTarget;
+            get => _focuses.GetFocus<ICmpMouseDragListener>();
         }
 
-        public KeyListener KeyFocus
+        public ICmpKeyListener KeyFocus
         {
-            get => _keyFocus;
+            get => _focuses.GetFocus<ICmpKeyListener>();
         }
 
-        private IEnumerable<KeyListener> GetGlobalKeyListeners()
+        private IEnumerable<T> GetGlobalListeners<T>() where T : class, ICmpLocalInputListener
         {
-            var listeners = Scene.Current.FindComponents<KeyListener>()
-                ?.Where(x => x.Global && x != _keyFocus);
+            var focus = _focuses.GetFocus<T>();
 
-            if (DualityApp.ExecContext == DualityApp.ExecutionContext.Editor)
-                listeners = listeners.Where(x => x.EditorUpdatable);
-
-            return listeners;
-        }
-
-        private IEnumerable<MouseListener> GetGlobalMouseListeners()
-        {
-            var listeners = Scene.Current.FindComponents<MouseListener>()
-                ?.Where(x => x.Global && x != _mouseFocus);
-
-            if (DualityApp.ExecContext == DualityApp.ExecutionContext.Editor)
-                listeners = listeners.Where(x => x.EditorUpdatable);
+            var listeners = Scene.Current.FindComponents<T>()
+                .Where(x => x.Global && x != focus);
 
             return listeners;
         }
@@ -141,81 +129,121 @@ namespace Soulstone.Duality.Plugins.Cupboard.Input
         {
             if (_lastWindowSize != DualityApp.TargetViewSize)
             {
-                foreach (var listener in Scene.Current.FindComponents<ResizeListener>())
+                foreach (var listener in Scene.Current.FindComponents<ICmpResizeListener>())
                     listener.OnWindowSizeChanged(new ResizeEventArgs(_lastWindowSize, DualityApp.TargetViewSize));
 
                 _lastWindowSize = DualityApp.TargetViewSize;
             }
         }
 
-        private void UpdateKeyboardFocus(EventArgs e, bool any = false)
+        private void UpdateMouseFocus(EventArgs e)
         {
-            KeyListener listener = null;
+            ICmpMouseListener newFocus = GetNewFocus<ICmpMouseListener>();
 
-            var focusObj = _mouseFocus?.GameObj;
+            var currentFocus = _focuses.GetFocus<ICmpMouseListener>();
 
-            while (focusObj != null && (listener == null || !listener.Active))
+            if (currentFocus != newFocus)
             {
-                listener = focusObj.GetComponent<KeyListener>();
-                focusObj = focusObj.Parent;
+                currentFocus?.OnLostFocus(e);
+                currentFocus = newFocus;
+                currentFocus?.OnGainedFocus(e);
             }
 
-            if (any && listener == null)
+            _focuses.SetFocus<ICmpMouseListener>(newFocus);
+        }
+
+        private void UpdateMouseWheelFocus(EventArgs e)
+        {
+            ICmpMouseWheelListener newFocus = GetNewFocus<ICmpMouseWheelListener>();
+            var currentFocus = _focuses.GetFocus<ICmpMouseWheelListener>();
+
+            if (currentFocus != newFocus)
             {
-                listener = Scene.Current.FindComponents<KeyListener>()
+                _focuses.SetFocus<ICmpMouseWheelListener>(newFocus);
+            }
+        }
+
+        private void InitializeKeyboardFocus()
+        {
+            ICmpKeyListener newFocus = Scene.Current.FindComponents<ICmpKeyListener>()
                     .Where(x => x.Active && x.RequestFocus)
                     .FirstOrDefault();
 
-                if (listener == null)
-                    listener = Scene.Current.FindComponent<KeyListener>(activeOnly: true);
-            }
+            if (newFocus == null)
+                newFocus = Scene.Current.FindComponent<ICmpKeyListener>(activeOnly: true);
 
-            if (DualityApp.ExecContext == DualityApp.ExecutionContext.Editor && !listener.EditorUpdatable)
-                listener = null;
+            var currentFocus = _focuses.GetFocus<ICmpKeyListener>();
 
-            if (_keyFocus != listener)
+            if (currentFocus != newFocus)
             {
-                _keyFocus?.OnLostFocus(e);
-                _keyFocus = listener;
-                _keyFocus?.OnGainedFocus(e);
+                currentFocus?.OnLostFocus(new EventArgs());
+                currentFocus = newFocus;
+                currentFocus?.OnGainedFocus(new EventArgs());
             }
+
+            _focuses.SetFocus<ICmpKeyListener>(newFocus);
         }
 
-        private void UpdateMouseFocus(EventArgs e)
+        private void UpdateKeyboardFocus(EventArgs e)
         {
-            // Remember that this doesn't work when the profile renderer is rendering but invisible
-            // (This has caught me twice now)
+            ICmpKeyListener newFocus = GetNewFocus<ICmpKeyListener>();
 
-            MouseListener listener = null;
+            var currentFocus = _focuses.GetFocus<ICmpKeyListener>();
+
+            if (currentFocus != newFocus)
+            {
+                currentFocus?.OnLostFocus(e);
+                currentFocus = newFocus;
+                currentFocus?.OnGainedFocus(e);
+            }
+
+            _focuses.SetFocus<ICmpKeyListener>(newFocus);
+        }
+
+        private T GetNewFocus<T>() where T : class, IManageableObject
+        {
+            T newListener;
 
             if (_dragging)
-                listener = _currentDragTarget;
-
-            else if (DualityApp.Mouse.IsAvailable)
             {
-                TryGetComponentUnderMouse(out listener, VisibilityFlag.Group1, ProjectionMode.Screen);
+                // Don't assign new focuses while dragging, this gives unwanted behaviour when the mouse speeds ahead of the
+                // object being dragged.
+                
+                // While this is the right behaviour for the mouse focus when a drag movement is used to move an object, I'm
+                // not sure this is good general default behaviour. 
 
-                if (listener == null)
-                    TryGetComponentUnderMouse(out listener, VisibilityFlag.All & ~VisibilityFlag.Group1, ProjectionMode.Perspective);
+                newListener = _focuses.GetFocus<T>();
             }
 
-            if (DualityApp.ExecContext == DualityApp.ExecutionContext.Editor && !listener.EditorUpdatable)
-                listener = null;
+            else TryGetComponentUnderMouse(out newListener);
 
-            if (_mouseFocus != listener)
-            {
-                _mouseFocus?.OnExited(e);
-                _mouseFocus = listener;
-                _mouseFocus?.OnEntered(e);
-            }
+            return newListener;
         }
 
-        private bool TryGetComponentUnderMouse<T>(out T listener, VisibilityFlag groups, ProjectionMode mode) where T : Component
+        private bool TryGetComponentUnderMouse<T>(out T newListener) where T : class, IManageableObject
         {
-            // This has been an interesting experiment, but it seems a terrible way to do things in retrosepct.
-            // A manual check, first with bounding radii / AABB rects, and then maybe pixel perfect, would be both more
-            // performant and more importantly less reliant on obscure internals.
+            newListener = null;
 
+            if (DualityApp.Mouse.IsAvailable)
+            {
+                TryGetComponentUnderMouse(out newListener, VisibilityFlag.Group1, ProjectionMode.Screen);
+
+                if (newListener == null)
+                    TryGetComponentUnderMouse(out newListener, VisibilityFlag.All & ~VisibilityFlag.Group1, ProjectionMode.Perspective);
+            }
+
+            return newListener != null;
+        }
+
+        private bool TryGetComponentUnderMouse<T>(out T listener, VisibilityFlag groups, ProjectionMode mode) where T : class, IManageableObject
+        {
+            // This has been an interesting experiment, but it is a bit delicate. The advantage is out-of-the-box pixel perfect mouse detecting for any renderer,
+            // but the disadvantages are performance penalities, no flexibility*, and no easy way to fix bugs. Might be worth looking 
+            // at making a manual alternative to this.
+
+            // *One might want a bounding radius for items that are partially transparent or very small. 
+
+            // Consider making the input manager a component, and this a property?
             var camera = Scene.Current.FindComponent<Camera>();
 
             if (camera == null)
@@ -243,7 +271,7 @@ namespace Soulstone.Duality.Plugins.Cupboard.Input
 
             while ((listener == null || !listener.Active) && obj != null)
             {
-                listener = obj?.GetComponent<T>();
+                listener = obj.GetComponent<T>();
                 obj = obj.Parent;
             }
 
@@ -255,18 +283,24 @@ namespace Soulstone.Duality.Plugins.Cupboard.Input
 
         private void StartDrag(MouseInput input, MouseButton button)
         {
-            _dragging = true;
             _currentDragInput = input;
             _currentDragButton = button;
-            _currentDragTarget = _mouseFocus;
             _currentDragOrigin = _currentDragInput.Pos;
+
+            // These two assignments need to happen before the global listeners are retrieved, lest 
+            // the local listener be treated as a global and informed of the event twice.
+            _currentDragTarget = GetNewFocus<ICmpMouseDragListener>();
+            _focuses.SetFocus<ICmpMouseDragListener>(_currentDragTarget);
+
+            // This (among other things) locks the current focuses, and so must happen after the previous two assignments.
+            _dragging = true;
 
             var e = new MouseDragEventArgs(_currentDragInput, _currentDragInput.Pos,
                 _currentDragButton, _currentDragInput.Vel, _currentDragOrigin);
 
             _currentDragTarget?.OnDragStart(e);
 
-            foreach (var listener in GetGlobalMouseListeners())
+            foreach (var listener in GetGlobalListeners<ICmpMouseDragListener>())
                 listener.OnDragStart(e);
         }
 
@@ -280,7 +314,7 @@ namespace Soulstone.Duality.Plugins.Cupboard.Input
 
             _currentDragTarget?.OnDragContinue(e);
 
-            foreach (var listener in GetGlobalMouseListeners())
+            foreach (var listener in GetGlobalListeners<ICmpMouseDragListener>())
                 listener.OnDragContinue(e);
         }
 
@@ -297,25 +331,29 @@ namespace Soulstone.Duality.Plugins.Cupboard.Input
             _currentDragTarget?.OnDragEnd(e);
 
             _currentDragInput = null;
-            _currentDragTarget = null;
 
-            foreach (var listener in GetGlobalMouseListeners())
+            foreach (var listener in GetGlobalListeners<ICmpMouseDragListener>())
                 listener.OnDragEnd(e);
+
+            // These two assignments need to happen after the global listeners are retrieved, lest 
+            // the local listener be treated as a global and informed of the event twice.
+            _currentDragTarget = null;
+            _focuses.ClearFocus<ICmpMouseDragListener>();
         }
 
         private void Keyboard_KeyDown(object sender, KeyboardKeyEventArgs e)
         {
-            _keyFocus?.OnKeyDown(e);
+            _focuses.GetFocus<ICmpKeyListener>()?.OnKeyDown(e);
             
-            foreach (var listener in GetGlobalKeyListeners())
+            foreach (var listener in GetGlobalListeners<ICmpKeyListener>())
                 listener.OnKeyDown(e);
         }
 
         private void Keyboard_KeyUp(object sender, KeyboardKeyEventArgs e)
         {
-            _keyFocus?.OnKeyUp(e);
+            _focuses.GetFocus<ICmpKeyListener>()?.OnKeyUp(e);
 
-            foreach (var listener in GetGlobalKeyListeners())
+            foreach (var listener in GetGlobalListeners<ICmpKeyListener>())
                 listener.OnKeyUp(e);
         }
 
@@ -323,15 +361,15 @@ namespace Soulstone.Duality.Plugins.Cupboard.Input
         {
             UpdateKeyboardFocus(e);
 
-            foreach (var listener in GetGlobalKeyListeners())
+            foreach (var listener in GetGlobalListeners<ICmpKeyListener>())
                 listener.OnLostFocus(e);
         }
 
         private void Keyboard_BecomesAvailable(object sender, EventArgs e)
         {
-            UpdateKeyboardFocus(e, any: true);
+            InitializeKeyboardFocus();
 
-            foreach (var listener in GetGlobalKeyListeners())
+            foreach (var listener in GetGlobalListeners<ICmpKeyListener>())
                 listener.OnGainedFocus(e);
         }
 
@@ -339,8 +377,8 @@ namespace Soulstone.Duality.Plugins.Cupboard.Input
         {
             UpdateMouseFocus(e);
 
-            foreach (var listener in GetGlobalMouseListeners())
-                listener.OnEntered(e);
+            foreach (var listener in GetGlobalListeners<ICmpMouseListener>())
+                listener.OnGainedFocus(e);
         }
 
         private void Mouse_NoLongerAvailable(object sender, EventArgs e)
@@ -348,40 +386,42 @@ namespace Soulstone.Duality.Plugins.Cupboard.Input
             EndDrag();
             UpdateMouseFocus(e);
 
-            foreach (var listener in GetGlobalMouseListeners())
-                listener.OnExited(e);
+            foreach (var listener in GetGlobalListeners<ICmpMouseListener>())
+                listener.OnLostFocus(e);
         }
 
         private void Mouse_WheelChanged(object sender, MouseWheelEventArgs e)
         {
-            UpdateMouseFocus(e);
-            _mouseFocus?.OnWheelChanged(e);
+            UpdateMouseWheelFocus(e);
+            _focuses.GetFocus<ICmpMouseWheelListener>()?.OnWheelChanged(e);
 
-            foreach (var listener in GetGlobalMouseListeners())
+            foreach (var listener in GetGlobalListeners<ICmpMouseWheelListener>())
                 listener.OnWheelChanged(e);
         }
         private void Mouse_Move(object sender, MouseMoveEventArgs e)
         {
             UpdateMouseFocus(e);
-            _mouseFocus?.OnMove(e);
+            _focuses.GetFocus<ICmpMouseListener>()?.OnMove(e);
 
             ContinueDrag();
 
-            foreach (var listener in GetGlobalMouseListeners())
+            foreach (var listener in GetGlobalListeners<ICmpMouseListener>())
                 listener.OnMove(e);
         }
 
         private void Mouse_ButtonUp(object sender, MouseButtonEventArgs e)
         {
+            // Current only one general drag is supported. Silmultaneous drags with different buttons would be
+            // a nice feature
             //if (e.Button == _currentDragButton)
             EndDrag();
 
             UpdateMouseFocus(e);
-            _mouseFocus?.OnButtonUp(e);
+            _focuses.GetFocus<ICmpMouseListener>()?.OnButtonUp(e);
 
             UpdateKeyboardFocus(e);
 
-            foreach (var listener in GetGlobalMouseListeners())
+            foreach (var listener in GetGlobalListeners<ICmpMouseListener>())
                 listener.OnButtonUp(e);
         }
 
@@ -392,12 +432,12 @@ namespace Soulstone.Duality.Plugins.Cupboard.Input
             EndDrag();
             
             UpdateMouseFocus(e);
-            _mouseFocus?.OnButtonDown(e);
+            _focuses.GetFocus<ICmpMouseListener>()?.OnButtonDown(e);
             
             if(_currentDragTarget == null)
                 StartDrag(e.InputChannel as MouseInput, e.Button);
 
-            foreach (var listener in GetGlobalMouseListeners())
+            foreach (var listener in GetGlobalListeners<ICmpMouseListener>())
                 listener.OnButtonDown(e);
         }
     }
