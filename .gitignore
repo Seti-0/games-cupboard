@@ -41,5 +41,7 @@ bin/
 # (These won't be downloaded automatically by the Duality package manager)
 !SoulstoneUtility.core.dll
 !SoulstoneUtility.core.pdb
+!SoulstoneSerialization.editor.dll
+!SoulstoneSerialization.editor.pdb
 !Lidgren.Network.dll
 !Lidgren.Network.pdb
