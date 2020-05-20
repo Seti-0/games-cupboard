@@ -1,1 +1,1 @@
-Template repository for duality plugins. For now, just contains duality and a suitable .gitignore
+WIP. Could become a collection of board games someday. Or maybe a library with the actual games split out into other projects. 
