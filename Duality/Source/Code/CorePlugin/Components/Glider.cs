@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 using Duality;
 using Duality.Components;
-
 using Duality.Editor;
+
+using Soulstone.Duality.Utility;
+
 using Soulstone.Duality.Plugins.Cupboard.Properties;
 
 namespace Soulstone.Duality.Plugins.Cupboard.Components
 {
     [EditorHintCategory(CupboardResNames.CategoryCommon)]
     [RequiredComponent(typeof(Transform))]
-    public class Glider : Component, ICmpUpdatable
+    public class Glider : Component, ICmpInitializable, ICmpUpdatable
     {
         /*
          A major refactor is needed here at some point. Null/inactive warnings aplenty.
@@ -35,13 +37,12 @@ namespace Soulstone.Duality.Plugins.Cupboard.Components
         private float _rotationRate = 0.15f;
         private float? _zRate = null;
 
-        // Maybe look at not serializing anything here?
-        private Vector3 _targetLocalPos   = Vector3.Zero;
-        private float   _targetLocalScale = 1;
-        private float   _targetLocalAngle = 0;
-        private bool    _targetReached    = false;
+        [DontSerialize] private Vector3 _targetLocalPos   = Vector3.Zero;
+        [DontSerialize] private float   _targetLocalScale = 1;
+        [DontSerialize] private float   _targetLocalAngle = 0;
+        [DontSerialize] private bool    _targetReached    = false;
 
-        private Queue<Step> _stepQueue = new Queue<Step>();
+        [DontSerialize] private Queue<Step> _stepQueue;
 
         [DontSerialize] private EventHandler _targetSet, _targetReachedEvent;
 
@@ -207,6 +208,12 @@ namespace Soulstone.Duality.Plugins.Cupboard.Components
             if (Active)
                 CheckTarget(Time.DeltaTime);
         }
+        public void OnActivate()
+        {
+            Reset();
+        }
+
+        public void OnDeactivate() { }
 
         protected virtual void OnTargetReached(EventArgs args)
         {
@@ -254,11 +261,37 @@ namespace Soulstone.Duality.Plugins.Cupboard.Components
             _stepQueue.Enqueue(step);
         }
 
+        private void CheckState()
+        {
+            // Reset() should be called after serialization, which
+            // is detected here because _stepQueue has [DontSerialize]... hopefully.
+            // Maybe change this to something more explicit?
+            if (_stepQueue == null)
+                Reset();
+        }
+
         public void Reset()
         {
-            _targetLocalPos = GameObj.Transform.LocalPos;
-            _targetLocalScale = GameObj.Transform.LocalScale;
-            _targetLocalAngle = GameObj.Transform.LocalAngle;
+            if (_stepQueue == null)
+                _stepQueue = new Queue<Step>();
+
+            _stepQueue.Clear();
+
+            if (!Warnings.NullOrDisposed(GameObj))
+            {
+                if (!Warnings.NullOrDisposed(GameObj.Transform))
+                {
+                    _targetLocalPos = GameObj.Transform.LocalPos;
+                    _targetLocalScale = GameObj.Transform.LocalScale;
+                    _targetLocalAngle = GameObj.Transform.LocalAngle;
+                    _targetReached = true;
+                    return;
+                }
+            }
+
+            _targetLocalPos = Vector3.Zero;
+            _targetLocalScale = 1;
+            _targetLocalAngle = 0;
             _targetReached = true;
         }
 
@@ -281,6 +314,8 @@ namespace Soulstone.Duality.Plugins.Cupboard.Components
 
         private void CheckTarget(float deltaTime)
         {
+            CheckState();
+
             Vector3 pos = GameObj.Transform.LocalPos;
             Vector3 posDelta = _targetLocalPos - pos;
 

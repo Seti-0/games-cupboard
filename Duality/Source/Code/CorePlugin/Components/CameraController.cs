@@ -407,7 +407,7 @@ namespace Soulstone.Duality.Plugins.Cupboard.Components
 
             var transform = GameObj?.Transform;
 
-            if (!Warnings.Null(glider))
+            if (!Warnings.NullOrDisposed(transform))
                 transform.Pos = pos;
         }
 
