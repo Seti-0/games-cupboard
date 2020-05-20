@@ -4,14 +4,35 @@ using System.Linq;
 using System.Text;
 
 using Duality;
+using Duality.Resources;
 
-namespace Duality_
+using Duality.Editor;
+
+using Soulstone.Duality.Plugins.Cupboard.UI;
+using Soulstone.Duality.Plugins.Cupboard.Input;
+
+namespace Soulstone.Duality.Plugins.Cupboard
 {
-	/// <summary>
-	/// Defines a Duality core plugin.
-	/// </summary>
-	public class Duality_CorePlugin : CorePlugin
+	public class ChineseCheckers : CorePlugin
 	{
-		// Override methods here for global logic
+		protected override void InitPlugin()
+		{
+			CupboardApp.Init();
+		}
+
+		protected override void OnDisposePlugin()
+		{
+			CupboardApp.Cleanup();
+		}
+
+		protected override void OnGameStarting()
+		{
+			GameFlow.OnGameStart();
+		}
+
+		protected override void OnBeforeUpdate()
+		{
+			CupboardApp.Update();
+		}
 	}
 }

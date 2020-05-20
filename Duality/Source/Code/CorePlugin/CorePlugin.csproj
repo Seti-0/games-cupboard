@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -8,12 +8,12 @@
     <ProjectGuid>{AFE883F3-72B4-4C7C-A1D1-44EDC09C8F6E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Duality_</RootNamespace>
-    <AssemblyName>GamePlugin.core</AssemblyName>
+    <RootNamespace>Soulstone.Duality.Plugins.Cupboard</RootNamespace>
+    <AssemblyName>GamesCupboard.core</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -45,13 +45,97 @@
     <Reference Include="DualityPrimitives">
       <HintPath>..\..\..\DualityPrimitives.dll</HintPath>
     </Reference>
+    <Reference Include="Lidgren.Network, Version=2012.1.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lidgren.Network.1.0.2\lib\net451\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="SoulstoneUtility.core">
+      <HintPath>..\..\..\Plugins\SoulstoneUtility.core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\AlphaGlider.cs" />
+    <Compile Include="Components\CameraController.cs" />
+    <Compile Include="Components\Comment.cs" />
+    <Compile Include="Components\Draggable.cs" />
+    <Compile Include="Components\FlowTest.cs" />
+    <Compile Include="Components\Game\Board.cs" />
+    <Compile Include="Components\Game\BoardRenderer.cs" />
+    <Compile Include="Components\Game\Dice.cs" />
+    <Compile Include="Components\Game\GamePieces.cs" />
+    <Compile Include="Components\Game\Pawn.cs" />
+    <Compile Include="Components\Glider.cs" />
+    <Compile Include="Components\Input\KeyListener.cs" />
+    <Compile Include="Components\Input\MouseListener.cs" />
+    <Compile Include="Components\Input\ResizeListener.cs" />
+    <Compile Include="Components\Loader.cs" />
+    <Compile Include="Components\SceneSelector.cs" />
+    <Compile Include="Components\Selection\ISelectable.cs" />
+    <Compile Include="Components\Selection\SelectionArtist.cs" />
+    <Compile Include="Components\Selection\SelectionChangedEventArgs.cs" />
+    <Compile Include="Components\Selection\SelectionKeeper.cs" />
+    <Compile Include="Components\Selection\SelectionWatcher.cs" />
+    <Compile Include="Components\Spinner.cs" />
+    <Compile Include="Components\UI\Background.cs" />
+    <Compile Include="Components\UI\Button.cs" />
+    <Compile Include="Components\UI\Context.cs" />
+    <Compile Include="Components\UI\Contexts\GameContext.cs" />
+    <Compile Include="Components\UI\Contexts\MainMenuContext.cs" />
+    <Compile Include="Components\UI\Contexts\ResetDialogContext.cs" />
+    <Compile Include="Components\UI\Layout.cs" />
+    <Compile Include="Components\UI\NotificationsArea.cs" />
+    <Compile Include="Components\UI\NotificationTest.cs" />
+    <Compile Include="Components\UI\TextEditor.cs" />
     <Compile Include="CorePlugin.cs" />
-    <Compile Include="YourCustomComponentType.cs" />
+    <Compile Include="CupboardApp.cs" />
+    <Compile Include="Game\D6.cs" />
+    <Compile Include="Game\DiceRoller.cs" />
+    <Compile Include="Game\GameObjectPool.cs" />
+    <Compile Include="Game\HexagonalLayout.cs" />
+    <Compile Include="Game\IBoardLayout.cs" />
+    <Compile Include="Game\IDiceLayout.cs" />
+    <Compile Include="GroupFlags.cs" />
+    <Compile Include="Input\InputManager.cs" />
+    <Compile Include="Multiplayer\BaseNetworker.cs" />
+    <Compile Include="Multiplayer\GameNetworking.cs" />
+    <Compile Include="Multiplayer\GameState.cs" />
+    <Compile Include="Multiplayer\INetworker.cs" />
+    <Compile Include="Multiplayer\NetEvents.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\CupboardResNames.cs" />
+    <Compile Include="Resources\BoardDesign.cs" />
+    <Compile Include="Resources\ChineseCheckersBoard.cs" />
+    <Compile Include="Resources\DiceDesign.cs" />
+    <Compile Include="Resources\FreeBoardDesign.cs" />
+    <Compile Include="Resources\GridBoardDesign.cs" />
+    <Compile Include="Resources\Save.cs" />
+    <Compile Include="State\FromDuality\ComponentCopy.cs" />
+    <Compile Include="State\FromDuality\EventArgs.cs" />
+    <Compile Include="State\FromDuality\ExtMethodsIEnumerableCopy.cs" />
+    <Compile Include="State\FromDuality\GameObjectCopy.cs" />
+    <Compile Include="State\FromDuality\GameObjectManagerCopy.cs" />
+    <Compile Include="State\FromDuality\IManageableObjectCopy.cs" />
+    <Compile Include="State\FromDuality\SceneCopy.cs" />
+    <Compile Include="State\StateEntityManager.cs" />
+    <Compile Include="UI\ContextHelper.cs" />
+    <Compile Include="UI\GameFlow.cs" />
+    <Compile Include="UI\IContextInitializable.cs" />
+    <Compile Include="UI\IContextUpdatable.cs" />
+    <Compile Include="UI\ListenerCollection.cs" />
+    <Compile Include="UI\Margins.cs" />
+    <Compile Include="UI\UI.cs" />
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <ItemGroup>
+    <EmbeddedResource Include="EmbeddedResources\plan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EmbeddedResources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- Copy all plugin binaries to the plugin folder -->
   <Import Project="$(SolutionDir)AggregateUserPlugins.targets" />
 </Project>
