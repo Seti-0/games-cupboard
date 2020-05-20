@@ -37,3 +37,9 @@ bin/
 !VistaBridgeLibrary.dll
 !Windows7.DesktopIntegration.dll
 
+# Manually added dlls
+# (These won't be downloaded automatically by the Duality package manager)
+!SoulstoneUtility.core.dll
+!SoulstoneUtility.core.pdb
+!Lidgren.Network.dll
+!Lidgren.Network.pdb
