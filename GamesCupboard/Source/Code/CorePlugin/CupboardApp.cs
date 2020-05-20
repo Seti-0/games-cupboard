@@ -46,11 +46,6 @@ namespace Soulstone.Duality.Plugins.Cupboard
             _networker?.Update();
         }
 
-        public static void EditorUpdate()
-        {
-            // pass for now
-        }
-
         public static void Cleanup()
         {
             if (_inputManager != null)
