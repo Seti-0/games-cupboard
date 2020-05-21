@@ -101,7 +101,7 @@ namespace Soulstone.Duality.Plugins.Cupboard.Components
         {
             ClearListeners();
 
-            if (Warnings.Inactive(this)) return;
+            if (Warnings.NullOrDisposed(GameObj)) return;
             if (Warnings.NullOrDisposed(Scene)) return;
 
             _mouseListener = GameObj.GetComponent<MouseListener>();
