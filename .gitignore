@@ -38,13 +38,16 @@ Backup/
 !VistaBridgeLibrary.dll
 !Windows7.DesktopIntegration.dll
 
-# Manually added dlls
-# (These won't be downloaded automatically by the Duality package manager)
+# Soulstone specific
 !SoulstoneUtility.core.dll
 !SoulstoneUtility.core.pdb
-!BlueInput.core.dll
-!BlueInput.core.pdb
 !SoulstoneSerialization.editor.dll
 !SoulstoneSerialization.editor.pdb
+
+# Project specific
+!Blue.core.dll
+!Blue.core.pdb
+!BlueInput.core.dll
+!BlueInput.core.pdb
 !Lidgren.Network.dll
 !Lidgren.Network.pdb
