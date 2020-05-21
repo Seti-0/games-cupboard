@@ -39,6 +39,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Blue.core">
+      <HintPath>..\..\..\..\..\blue\Duality\Plugins\Blue.core.dll</HintPath>
+    </Reference>
     <Reference Include="BlueInput.core">
       <HintPath>..\..\..\Plugins\BlueInput.core.dll</HintPath>
     </Reference>
@@ -58,7 +61,6 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Components\AlphaGlider.cs" />
     <Compile Include="Components\CameraController.cs" />
     <Compile Include="Components\Comment.cs" />
     <Compile Include="Components\Draggable.cs" />
@@ -77,16 +79,9 @@
     <Compile Include="Components\Selection\SelectionKeeper.cs" />
     <Compile Include="Components\Selection\SelectionWatcher.cs" />
     <Compile Include="Components\Spinner.cs" />
-    <Compile Include="Components\UI\Background.cs" />
-    <Compile Include="Components\UI\Button.cs" />
-    <Compile Include="Components\UI\Context.cs" />
-    <Compile Include="Components\UI\Contexts\GameContext.cs" />
-    <Compile Include="Components\UI\Contexts\MainMenuContext.cs" />
-    <Compile Include="Components\UI\Contexts\ResetDialogContext.cs" />
-    <Compile Include="Components\UI\Layout.cs" />
-    <Compile Include="Components\UI\NotificationsArea.cs" />
-    <Compile Include="Components\UI\NotificationTest.cs" />
-    <Compile Include="Components\UI\TextEditor.cs" />
+    <Compile Include="Components\Contexts\GameContext.cs" />
+    <Compile Include="Components\Contexts\MainMenuContext.cs" />
+    <Compile Include="Components\Contexts\ResetDialogContext.cs" />
     <Compile Include="CorePlugin.cs" />
     <Compile Include="CupboardApp.cs" />
     <Compile Include="Game\D6.cs" />
@@ -117,11 +112,7 @@
     <Compile Include="State\FromDuality\IManageableObjectCopy.cs" />
     <Compile Include="State\FromDuality\SceneCopy.cs" />
     <Compile Include="State\StateEntityManager.cs" />
-    <Compile Include="UI\ContextHelper.cs" />
-    <Compile Include="UI\GameFlow.cs" />
-    <Compile Include="UI\ListenerCollection.cs" />
-    <Compile Include="UI\Margins.cs" />
-    <Compile Include="UI\OldContext.cs" />
+    <Compile Include="GameFlow.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="EmbeddedResources\plan.png" />
@@ -132,6 +123,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- Copy all plugin binaries to the plugin folder -->
   <Import Project="$(SolutionDir)AggregateUserPlugins.targets" />

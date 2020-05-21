@@ -10,10 +10,12 @@ using Duality.Editor;
 
 using Soulstone.Duality.Utility;
 
+using Soulstone.Duality.Plugins.Blue;
+
 using Soulstone.Duality.Plugins.Cupboard.Components.Game;
 using Soulstone.Duality.Plugins.Cupboard.Properties;
 
-namespace Soulstone.Duality.Plugins.Cupboard.Components.UI.Contexts
+namespace Soulstone.Duality.Plugins.Cupboard.Components.UI
 {
     [EditorHintCategory(CupboardResNames.CategoryContexts)]
     public class GameContext : UIContext

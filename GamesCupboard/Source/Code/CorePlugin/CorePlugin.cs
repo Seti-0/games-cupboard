@@ -4,11 +4,6 @@ using System.Linq;
 using System.Text;
 
 using Duality;
-using Duality.Resources;
-
-using Duality.Editor;
-
-using Soulstone.Duality.Plugins.Cupboard.UI;
 
 namespace Soulstone.Duality.Plugins.Cupboard
 {

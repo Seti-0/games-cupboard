@@ -10,9 +10,11 @@ using Duality;
 using Duality.Resources;
 using Duality.Editor;
 
+using Soulstone.Duality.Plugins.Blue;
+
 using Soulstone.Duality.Plugins.Cupboard.Properties;
 
-namespace Soulstone.Duality.Plugins.Cupboard.Components.UI.Contexts
+namespace Soulstone.Duality.Plugins.Cupboard.Components.UI
 {
     [EditorHintCategory(CupboardResNames.CategoryContexts)]
     public class MainMenuContext : UIContext

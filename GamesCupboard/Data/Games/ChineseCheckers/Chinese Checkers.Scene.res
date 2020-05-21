@@ -6794,32 +6794,6 @@
                         <scale dataType="Float">1</scale>
                         <scaleAbs dataType="Float">1</scaleAbs>
                       </item>
-                      <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="1053290944">
-                        <active dataType="Bool">true</active>
-                        <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
-                          <A dataType="Byte">25</A>
-                          <B dataType="Byte">255</B>
-                          <G dataType="Byte">255</G>
-                          <R dataType="Byte">255</R>
-                        </colorTint>
-                        <customMat />
-                        <flipMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+FlipMode" name="None" value="0" />
-                        <gameobj dataType="ObjectRef">3879638960</gameobj>
-                        <offset dataType="Float">0</offset>
-                        <pixelGrid dataType="Bool">false</pixelGrid>
-                        <rect dataType="Struct" type="Duality.Rect">
-                          <H dataType="Float">52</H>
-                          <W dataType="Float">80</W>
-                          <X dataType="Float">-40</X>
-                          <Y dataType="Float">-28.5</Y>
-                        </rect>
-                        <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
-                        <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
-                          <contentPath dataType="String">Data\UI\Pixel.Material.res</contentPath>
-                        </sharedMat>
-                        <spriteIndex dataType="Int">-1</spriteIndex>
-                        <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
-                      </item>
                       <item dataType="Struct" type="Duality.Components.Renderers.TextRenderer" id="467609318">
                         <active dataType="Bool">true</active>
                         <blockAlign dataType="Enum" type="Duality.Alignment" name="Center" value="0" />
@@ -6849,17 +6823,37 @@
                         </text>
                         <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="1527031241">
-                        <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-                        <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                      <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="1053290944">
                         <active dataType="Bool">true</active>
+                        <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
+                          <A dataType="Byte">25</A>
+                          <B dataType="Byte">255</B>
+                          <G dataType="Byte">255</G>
+                          <R dataType="Byte">255</R>
+                        </colorTint>
+                        <customMat />
+                        <flipMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+FlipMode" name="None" value="0" />
                         <gameobj dataType="ObjectRef">3879638960</gameobj>
+                        <offset dataType="Float">0</offset>
+                        <pixelGrid dataType="Bool">false</pixelGrid>
+                        <rect dataType="Struct" type="Duality.Rect">
+                          <H dataType="Float">52</H>
+                          <W dataType="Float">80</W>
+                          <X dataType="Float">-40</X>
+                          <Y dataType="Float">-28.5</Y>
+                        </rect>
+                        <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
+                        <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
+                          <contentPath dataType="String">Data\UI\Pixel.Material.res</contentPath>
+                        </sharedMat>
+                        <spriteIndex dataType="Int">-1</spriteIndex>
+                        <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" id="325730781">
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider" id="86629357">
                         <_current />
                         <_original dataType="Float">0.2</_original>
-                        <_queue dataType="Struct" type="System.Collections.Generic.Queue`1[[Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step]]" id="55735985">
-                          <_array dataType="Array" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step[]" id="1291759150" length="0" />
+                        <_queue dataType="Struct" type="System.Collections.Generic.Queue`1[[Soulstone.Duality.Plugins.Blue.AlphaGlider+Step]]" id="66517249">
+                          <_array dataType="Array" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step[]" id="3684473134" length="0" />
                           <_head dataType="Int">0</_head>
                           <_size dataType="Int">0</_size>
                           <_tail dataType="Int">0</_tail>
@@ -6868,15 +6862,15 @@
                         <active dataType="Bool">true</active>
                         <gameobj dataType="ObjectRef">3879638960</gameobj>
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Background" id="3112622770">
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Background" id="3158694690">
                         <_ignoreLayout dataType="Bool">false</_ignoreLayout>
-                        <_margins dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.UI.Margins">
+                        <_margins dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Margins">
                           <Bottom dataType="Float">10</Bottom>
                           <Left dataType="Float">10</Left>
                           <Right dataType="Float">10</Right>
                           <Top dataType="Float">10</Top>
                         </_margins>
-                        <_padding dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.UI.Margins">
+                        <_padding dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Margins">
                           <Bottom dataType="Float">20</Bottom>
                           <Left dataType="Float">20</Left>
                           <Right dataType="Float">20</Right>
@@ -6887,7 +6881,13 @@
                         <active dataType="Bool">true</active>
                         <gameobj dataType="ObjectRef">3879638960</gameobj>
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Button" id="401790230">
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="1527031241">
+                        <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+                        <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                        <active dataType="Bool">true</active>
+                        <gameobj dataType="ObjectRef">3879638960</gameobj>
+                      </item>
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Button" id="1255693446">
                         <_command />
                         <_normalAlpha dataType="Float">0.1</_normalAlpha>
                         <_x003C_EffectDuration_x003E_k__BackingField dataType="Float">0.2</_x003C_EffectDuration_x003E_k__BackingField>
@@ -6905,20 +6905,20 @@
                       <keys dataType="Array" type="System.Object[]" id="3925452434">
                         <item dataType="ObjectRef">1481344110</item>
                         <item dataType="ObjectRef">2216400842</item>
-                        <item dataType="Type" id="1747920976" value="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" />
+                        <item dataType="Type" id="1747920976" value="Soulstone.Duality.Plugins.Blue.AlphaGlider" />
                         <item dataType="ObjectRef">2844716680</item>
-                        <item dataType="Type" id="2962753902" value="Soulstone.Duality.Plugins.Cupboard.Components.UI.Button" />
+                        <item dataType="Type" id="2962753902" value="Soulstone.Duality.Plugins.Blue.Button" />
                         <item dataType="Type" id="708126252" value="Duality.Components.Renderers.TextRenderer" />
-                        <item dataType="Type" id="113951506" value="Soulstone.Duality.Plugins.Cupboard.Components.UI.Background" />
+                        <item dataType="Type" id="113951506" value="Soulstone.Duality.Plugins.Blue.Background" />
                       </keys>
                       <values dataType="Array" type="System.Object[]" id="3149514186">
                         <item dataType="ObjectRef">3936916178</item>
                         <item dataType="ObjectRef">1053290944</item>
-                        <item dataType="ObjectRef">325730781</item>
+                        <item dataType="ObjectRef">86629357</item>
                         <item dataType="ObjectRef">1527031241</item>
-                        <item dataType="ObjectRef">401790230</item>
+                        <item dataType="ObjectRef">1255693446</item>
                         <item dataType="ObjectRef">467609318</item>
-                        <item dataType="ObjectRef">3112622770</item>
+                        <item dataType="ObjectRef">3158694690</item>
                       </values>
                     </body>
                   </compMap>
@@ -6958,19 +6958,19 @@
                   <scale dataType="Float">1</scale>
                   <scaleAbs dataType="Float">1</scaleAbs>
                 </item>
-                <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.ResizeListener" id="3104365906">
-                  <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-                  <active dataType="Bool">true</active>
-                  <gameobj dataType="ObjectRef">3482517518</gameobj>
-                </item>
-                <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Layout" id="2212435854">
+                <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Layout" id="3066339070">
                   <_ignoreLayout dataType="Bool">false</_ignoreLayout>
-                  <_orientation dataType="Enum" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Orientation" name="Vertical" value="1" />
+                  <_orientation dataType="Enum" type="Soulstone.Duality.Plugins.Blue.Orientation" name="Vertical" value="1" />
                   <_place dataType="Int">0</_place>
                   <_relativePos dataType="Struct" type="Duality.Vector2">
                     <X dataType="Float">1</X>
                     <Y dataType="Float">0</Y>
                   </_relativePos>
+                  <active dataType="Bool">true</active>
+                  <gameobj dataType="ObjectRef">3482517518</gameobj>
+                </item>
+                <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.ResizeListener" id="3104365906">
+                  <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">3482517518</gameobj>
                 </item>
@@ -6982,12 +6982,12 @@
               <body>
                 <keys dataType="Array" type="System.Object[]" id="2643302048">
                   <item dataType="ObjectRef">1481344110</item>
-                  <item dataType="Type" id="1926409436" value="Soulstone.Duality.Plugins.Cupboard.Components.UI.Layout" />
+                  <item dataType="Type" id="1926409436" value="Soulstone.Duality.Plugins.Blue.Layout" />
                   <item dataType="Type" id="2884929814" value="Soulstone.Duality.Plugins.Blue.Input.ResizeListener" />
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="1513256078">
                   <item dataType="ObjectRef">3539794736</item>
-                  <item dataType="ObjectRef">2212435854</item>
+                  <item dataType="ObjectRef">3066339070</item>
                   <item dataType="ObjectRef">3104365906</item>
                 </values>
               </body>
@@ -7032,32 +7032,6 @@
                         <scale dataType="Float">1</scale>
                         <scaleAbs dataType="Float">1</scaleAbs>
                       </item>
-                      <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="2821132960">
-                        <active dataType="Bool">true</active>
-                        <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
-                          <A dataType="Byte">0</A>
-                          <B dataType="Byte">255</B>
-                          <G dataType="Byte">0</G>
-                          <R dataType="Byte">0</R>
-                        </colorTint>
-                        <customMat />
-                        <flipMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+FlipMode" name="None" value="0" />
-                        <gameobj dataType="ObjectRef">1352513680</gameobj>
-                        <offset dataType="Float">0</offset>
-                        <pixelGrid dataType="Bool">false</pixelGrid>
-                        <rect dataType="Struct" type="Duality.Rect">
-                          <H dataType="Float">32</H>
-                          <W dataType="Float">124</W>
-                          <X dataType="Float">-62</X>
-                          <Y dataType="Float">-18.5</Y>
-                        </rect>
-                        <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
-                        <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
-                          <contentPath dataType="String">Data\UI\Pixel.Material.res</contentPath>
-                        </sharedMat>
-                        <spriteIndex dataType="Int">-1</spriteIndex>
-                        <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
-                      </item>
                       <item dataType="Struct" type="Duality.Components.Renderers.TextRenderer" id="2235451334">
                         <active dataType="Bool">true</active>
                         <blockAlign dataType="Enum" type="Duality.Alignment" name="Center" value="0" />
@@ -7087,19 +7061,45 @@
                         </text>
                         <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" id="2093572797">
+                      <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="2821132960">
+                        <active dataType="Bool">true</active>
+                        <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
+                          <A dataType="Byte">0</A>
+                          <B dataType="Byte">255</B>
+                          <G dataType="Byte">0</G>
+                          <R dataType="Byte">0</R>
+                        </colorTint>
+                        <customMat />
+                        <flipMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+FlipMode" name="None" value="0" />
+                        <gameobj dataType="ObjectRef">1352513680</gameobj>
+                        <offset dataType="Float">0</offset>
+                        <pixelGrid dataType="Bool">false</pixelGrid>
+                        <rect dataType="Struct" type="Duality.Rect">
+                          <H dataType="Float">32</H>
+                          <W dataType="Float">124</W>
+                          <X dataType="Float">-62</X>
+                          <Y dataType="Float">-18.5</Y>
+                        </rect>
+                        <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
+                        <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
+                          <contentPath dataType="String">Data\UI\Pixel.Material.res</contentPath>
+                        </sharedMat>
+                        <spriteIndex dataType="Int">-1</spriteIndex>
+                        <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
+                      </item>
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider" id="1854471373">
                         <_current />
                         <_original dataType="Float">1</_original>
-                        <_queue dataType="Struct" type="System.Collections.Generic.Queue`1[[Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step]]" id="1083706193">
-                          <_array dataType="Array" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step[]" id="1121953774" length="8">
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step" id="2694028880">
+                        <_queue dataType="Struct" type="System.Collections.Generic.Queue`1[[Soulstone.Duality.Plugins.Blue.AlphaGlider+Step]]" id="3279939361">
+                          <_array dataType="Array" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step[]" id="1567606382" length="8">
+                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="2179085904">
                               <Duration dataType="Float">0.2</Duration>
                               <Finite dataType="Bool">true</Finite>
                               <Patient dataType="Bool">false</Patient>
                               <Target dataType="Float">0</Target>
                               <Text dataType="Bool">false</Text>
                             </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step" id="2984361326">
+                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="3733351790">
                               <Duration dataType="Float">0.2</Duration>
                               <Finite dataType="Bool">true</Finite>
                               <Patient dataType="Bool">true</Patient>
@@ -7115,15 +7115,15 @@
                         <active dataType="Bool">true</active>
                         <gameobj dataType="ObjectRef">1352513680</gameobj>
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Background" id="585497490">
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Background" id="631569410">
                         <_ignoreLayout dataType="Bool">false</_ignoreLayout>
-                        <_margins dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.UI.Margins">
+                        <_margins dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Margins">
                           <Bottom dataType="Float">10</Bottom>
                           <Left dataType="Float">10</Left>
                           <Right dataType="Float">10</Right>
                           <Top dataType="Float">10</Top>
                         </_margins>
-                        <_padding dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.UI.Margins">
+                        <_padding dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Margins">
                           <Bottom dataType="Float">10</Bottom>
                           <Left dataType="Float">10</Left>
                           <Right dataType="Float">10</Right>
@@ -7134,8 +7134,8 @@
                         <active dataType="Bool">true</active>
                         <gameobj dataType="ObjectRef">1352513680</gameobj>
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.NotificationsArea" id="3155653175">
-                        <_lastMessage dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Notification" id="616410219">
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.NotificationsArea" id="2909874151">
+                        <_lastMessage dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Notification" id="28042011">
                           <Color dataType="Struct" type="Duality.Drawing.ColorRgba">
                             <A dataType="Byte">255</A>
                             <B dataType="Byte">255</B>
@@ -7167,16 +7167,16 @@
                         <item dataType="ObjectRef">708126252</item>
                         <item dataType="ObjectRef">2216400842</item>
                         <item dataType="ObjectRef">1747920976</item>
-                        <item dataType="Type" id="1500161056" value="Soulstone.Duality.Plugins.Cupboard.Components.UI.NotificationsArea" />
+                        <item dataType="Type" id="1500161056" value="Soulstone.Duality.Plugins.Blue.NotificationsArea" />
                         <item dataType="ObjectRef">113951506</item>
                       </keys>
                       <values dataType="Array" type="System.Object[]" id="487764698">
                         <item dataType="ObjectRef">1409790898</item>
                         <item dataType="ObjectRef">2235451334</item>
                         <item dataType="ObjectRef">2821132960</item>
-                        <item dataType="ObjectRef">2093572797</item>
-                        <item dataType="ObjectRef">3155653175</item>
-                        <item dataType="ObjectRef">585497490</item>
+                        <item dataType="ObjectRef">1854471373</item>
+                        <item dataType="ObjectRef">2909874151</item>
+                        <item dataType="ObjectRef">631569410</item>
                       </values>
                     </body>
                   </compMap>
@@ -7216,32 +7216,6 @@
                         <scale dataType="Float">1</scale>
                         <scaleAbs dataType="Float">1</scaleAbs>
                       </item>
-                      <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="1039098303">
-                        <active dataType="Bool">true</active>
-                        <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
-                          <A dataType="Byte">0</A>
-                          <B dataType="Byte">255</B>
-                          <G dataType="Byte">0</G>
-                          <R dataType="Byte">0</R>
-                        </colorTint>
-                        <customMat />
-                        <flipMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+FlipMode" name="None" value="0" />
-                        <gameobj dataType="ObjectRef">3865446319</gameobj>
-                        <offset dataType="Float">0</offset>
-                        <pixelGrid dataType="Bool">false</pixelGrid>
-                        <rect dataType="Struct" type="Duality.Rect">
-                          <H dataType="Float">32</H>
-                          <W dataType="Float">116</W>
-                          <X dataType="Float">-58</X>
-                          <Y dataType="Float">-18.5</Y>
-                        </rect>
-                        <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
-                        <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
-                          <contentPath dataType="String">Data\UI\Pixel.Material.res</contentPath>
-                        </sharedMat>
-                        <spriteIndex dataType="Int">-1</spriteIndex>
-                        <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
-                      </item>
                       <item dataType="Struct" type="Duality.Components.Renderers.TextRenderer" id="453416677">
                         <active dataType="Bool">true</active>
                         <blockAlign dataType="Enum" type="Duality.Alignment" name="Center" value="0" />
@@ -7271,47 +7245,73 @@
                         </text>
                         <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" id="311538140">
+                      <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="1039098303">
+                        <active dataType="Bool">true</active>
+                        <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
+                          <A dataType="Byte">0</A>
+                          <B dataType="Byte">255</B>
+                          <G dataType="Byte">0</G>
+                          <R dataType="Byte">0</R>
+                        </colorTint>
+                        <customMat />
+                        <flipMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+FlipMode" name="None" value="0" />
+                        <gameobj dataType="ObjectRef">3865446319</gameobj>
+                        <offset dataType="Float">0</offset>
+                        <pixelGrid dataType="Bool">false</pixelGrid>
+                        <rect dataType="Struct" type="Duality.Rect">
+                          <H dataType="Float">32</H>
+                          <W dataType="Float">116</W>
+                          <X dataType="Float">-58</X>
+                          <Y dataType="Float">-18.5</Y>
+                        </rect>
+                        <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
+                        <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
+                          <contentPath dataType="String">Data\UI\Pixel.Material.res</contentPath>
+                        </sharedMat>
+                        <spriteIndex dataType="Int">-1</spriteIndex>
+                        <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
+                      </item>
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider" id="72436716">
                         <_current />
                         <_original dataType="Float">0</_original>
-                        <_queue dataType="Struct" type="System.Collections.Generic.Queue`1[[Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step]]" id="1707454152">
-                          <_array dataType="Array" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step[]" id="2603212396" length="8">
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step" id="1074520932">
+                        <_queue dataType="Struct" type="System.Collections.Generic.Queue`1[[Soulstone.Duality.Plugins.Blue.AlphaGlider+Step]]" id="3714628536">
+                          <_array dataType="Array" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step[]" id="392909932" length="8">
+                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="3333617508">
                               <Duration dataType="Float">0.0333333351</Duration>
                               <Finite dataType="Bool">true</Finite>
                               <Patient dataType="Bool">false</Patient>
                               <Target dataType="Float">1</Target>
                               <Text dataType="Bool">true</Text>
                             </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step" id="3050654230">
+                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="3364125206">
                               <Duration dataType="Float">0.2</Duration>
                               <Finite dataType="Bool">true</Finite>
                               <Patient dataType="Bool">true</Patient>
                               <Target dataType="Float">0.4</Target>
                               <Text dataType="Bool">false</Text>
                             </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step" id="2110660704">
+                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="646052960">
                               <Duration dataType="Float">0.2</Duration>
                               <Finite dataType="Bool">true</Finite>
                               <Patient dataType="Bool">true</Patient>
                               <Target dataType="Float">0</Target>
                               <Text dataType="Bool">false</Text>
                             </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step" id="2909067106">
+                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="3009634146">
                               <Duration dataType="Float">-1</Duration>
                               <Finite dataType="Bool">false</Finite>
                               <Patient dataType="Bool">true</Patient>
                               <Target dataType="Float">0</Target>
                               <Text dataType="Bool">false</Text>
                             </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step" id="2520189244">
+                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="2799105340">
                               <Duration dataType="Float">0.2</Duration>
                               <Finite dataType="Bool">true</Finite>
                               <Patient dataType="Bool">true</Patient>
                               <Target dataType="Float">0</Target>
                               <Text dataType="Bool">false</Text>
                             </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step" id="3513461438">
+                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="1038934718">
                               <Duration dataType="Float">0.06666667</Duration>
                               <Finite dataType="Bool">true</Finite>
                               <Patient dataType="Bool">true</Patient>
@@ -7327,15 +7327,15 @@
                         <active dataType="Bool">true</active>
                         <gameobj dataType="ObjectRef">3865446319</gameobj>
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Background" id="3098430129">
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Background" id="3144502049">
                         <_ignoreLayout dataType="Bool">false</_ignoreLayout>
-                        <_margins dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.UI.Margins">
+                        <_margins dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Margins">
                           <Bottom dataType="Float">10</Bottom>
                           <Left dataType="Float">10</Left>
                           <Right dataType="Float">10</Right>
                           <Top dataType="Float">10</Top>
                         </_margins>
-                        <_padding dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.UI.Margins">
+                        <_padding dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Margins">
                           <Bottom dataType="Float">10</Bottom>
                           <Left dataType="Float">10</Left>
                           <Right dataType="Float">10</Right>
@@ -7346,8 +7346,8 @@
                         <active dataType="Bool">true</active>
                         <gameobj dataType="ObjectRef">3865446319</gameobj>
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.NotificationsArea" id="1373618518">
-                        <_lastMessage dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Notification" id="2202479722">
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.NotificationsArea" id="1127839494">
+                        <_lastMessage dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Notification" id="3434661562">
                           <Color dataType="Struct" type="Duality.Drawing.ColorRgba">
                             <A dataType="Byte">255</A>
                             <B dataType="Byte">255</B>
@@ -7386,9 +7386,9 @@
                         <item dataType="ObjectRef">3922723537</item>
                         <item dataType="ObjectRef">453416677</item>
                         <item dataType="ObjectRef">1039098303</item>
-                        <item dataType="ObjectRef">311538140</item>
-                        <item dataType="ObjectRef">1373618518</item>
-                        <item dataType="ObjectRef">3098430129</item>
+                        <item dataType="ObjectRef">72436716</item>
+                        <item dataType="ObjectRef">1127839494</item>
+                        <item dataType="ObjectRef">3144502049</item>
                       </values>
                     </body>
                   </compMap>
@@ -7428,32 +7428,6 @@
                         <scale dataType="Float">1</scale>
                         <scaleAbs dataType="Float">1</scaleAbs>
                       </item>
-                      <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="1192672672">
-                        <active dataType="Bool">true</active>
-                        <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
-                          <A dataType="Byte">25</A>
-                          <B dataType="Byte">255</B>
-                          <G dataType="Byte">255</G>
-                          <R dataType="Byte">255</R>
-                        </colorTint>
-                        <customMat />
-                        <flipMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+FlipMode" name="None" value="0" />
-                        <gameobj dataType="ObjectRef">4019020688</gameobj>
-                        <offset dataType="Float">0</offset>
-                        <pixelGrid dataType="Bool">false</pixelGrid>
-                        <rect dataType="Struct" type="Duality.Rect">
-                          <H dataType="Float">52</H>
-                          <W dataType="Float">72</W>
-                          <X dataType="Float">-36</X>
-                          <Y dataType="Float">-28.5</Y>
-                        </rect>
-                        <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
-                        <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
-                          <contentPath dataType="String">Data\UI\Pixel.Material.res</contentPath>
-                        </sharedMat>
-                        <spriteIndex dataType="Int">-1</spriteIndex>
-                        <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
-                      </item>
                       <item dataType="Struct" type="Duality.Components.Renderers.TextRenderer" id="606991046">
                         <active dataType="Bool">true</active>
                         <blockAlign dataType="Enum" type="Duality.Alignment" name="Center" value="0" />
@@ -7483,17 +7457,37 @@
                         </text>
                         <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="1666412969">
-                        <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-                        <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                      <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="1192672672">
                         <active dataType="Bool">true</active>
+                        <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
+                          <A dataType="Byte">25</A>
+                          <B dataType="Byte">255</B>
+                          <G dataType="Byte">255</G>
+                          <R dataType="Byte">255</R>
+                        </colorTint>
+                        <customMat />
+                        <flipMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+FlipMode" name="None" value="0" />
                         <gameobj dataType="ObjectRef">4019020688</gameobj>
+                        <offset dataType="Float">0</offset>
+                        <pixelGrid dataType="Bool">false</pixelGrid>
+                        <rect dataType="Struct" type="Duality.Rect">
+                          <H dataType="Float">52</H>
+                          <W dataType="Float">72</W>
+                          <X dataType="Float">-36</X>
+                          <Y dataType="Float">-28.5</Y>
+                        </rect>
+                        <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
+                        <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
+                          <contentPath dataType="String">Data\UI\Pixel.Material.res</contentPath>
+                        </sharedMat>
+                        <spriteIndex dataType="Int">-1</spriteIndex>
+                        <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" id="465112509">
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider" id="226011085">
                         <_current />
                         <_original dataType="Float">0.2</_original>
-                        <_queue dataType="Struct" type="System.Collections.Generic.Queue`1[[Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step]]" id="64461905">
-                          <_array dataType="ObjectRef">1291759150</_array>
+                        <_queue dataType="Struct" type="System.Collections.Generic.Queue`1[[Soulstone.Duality.Plugins.Blue.AlphaGlider+Step]]" id="1008441377">
+                          <_array dataType="ObjectRef">3684473134</_array>
                           <_head dataType="Int">0</_head>
                           <_size dataType="Int">0</_size>
                           <_tail dataType="Int">0</_tail>
@@ -7502,15 +7496,15 @@
                         <active dataType="Bool">true</active>
                         <gameobj dataType="ObjectRef">4019020688</gameobj>
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Background" id="3252004498">
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Background" id="3298076418">
                         <_ignoreLayout dataType="Bool">false</_ignoreLayout>
-                        <_margins dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.UI.Margins">
+                        <_margins dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Margins">
                           <Bottom dataType="Float">10</Bottom>
                           <Left dataType="Float">10</Left>
                           <Right dataType="Float">10</Right>
                           <Top dataType="Float">10</Top>
                         </_margins>
-                        <_padding dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.UI.Margins">
+                        <_padding dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Margins">
                           <Bottom dataType="Float">20</Bottom>
                           <Left dataType="Float">20</Left>
                           <Right dataType="Float">20</Right>
@@ -7521,7 +7515,13 @@
                         <active dataType="Bool">true</active>
                         <gameobj dataType="ObjectRef">4019020688</gameobj>
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Button" id="541171958">
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="1666412969">
+                        <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+                        <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                        <active dataType="Bool">true</active>
+                        <gameobj dataType="ObjectRef">4019020688</gameobj>
+                      </item>
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Button" id="1395075174">
                         <_command />
                         <_normalAlpha dataType="Float">0.1</_normalAlpha>
                         <_x003C_EffectDuration_x003E_k__BackingField dataType="Float">0.2</_x003C_EffectDuration_x003E_k__BackingField>
@@ -7548,11 +7548,11 @@
                       <values dataType="Array" type="System.Object[]" id="1685722">
                         <item dataType="ObjectRef">4076297906</item>
                         <item dataType="ObjectRef">1192672672</item>
-                        <item dataType="ObjectRef">465112509</item>
+                        <item dataType="ObjectRef">226011085</item>
                         <item dataType="ObjectRef">1666412969</item>
-                        <item dataType="ObjectRef">541171958</item>
+                        <item dataType="ObjectRef">1395075174</item>
                         <item dataType="ObjectRef">606991046</item>
-                        <item dataType="ObjectRef">3252004498</item>
+                        <item dataType="ObjectRef">3298076418</item>
                       </values>
                     </body>
                   </compMap>
@@ -7592,16 +7592,16 @@
                   <scale dataType="Float">1</scale>
                   <scaleAbs dataType="Float">1</scaleAbs>
                 </item>
-                <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.ResizeListener" id="1825173515">
-                  <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+                <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Layout" id="1787146679">
+                  <_ignoreLayout dataType="Bool">false</_ignoreLayout>
+                  <_orientation dataType="Enum" type="Soulstone.Duality.Plugins.Blue.Orientation" name="Horizontal" value="0" />
+                  <_place dataType="Int">0</_place>
+                  <_relativePos dataType="Struct" type="Duality.Vector2" />
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">2203325127</gameobj>
                 </item>
-                <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Layout" id="933243463">
-                  <_ignoreLayout dataType="Bool">false</_ignoreLayout>
-                  <_orientation dataType="Enum" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Orientation" name="Horizontal" value="0" />
-                  <_place dataType="Int">0</_place>
-                  <_relativePos dataType="Struct" type="Duality.Vector2" />
+                <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.ResizeListener" id="1825173515">
+                  <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
                   <active dataType="Bool">true</active>
                   <gameobj dataType="ObjectRef">2203325127</gameobj>
                 </item>
@@ -7618,7 +7618,7 @@
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="3183530934">
                   <item dataType="ObjectRef">2260602345</item>
-                  <item dataType="ObjectRef">933243463</item>
+                  <item dataType="ObjectRef">1787146679</item>
                   <item dataType="ObjectRef">1825173515</item>
                 </values>
               </body>
@@ -7659,32 +7659,6 @@
                         <scale dataType="Float">1</scale>
                         <scaleAbs dataType="Float">1</scaleAbs>
                       </item>
-                      <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="694879251">
-                        <active dataType="Bool">true</active>
-                        <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
-                          <A dataType="Byte">25</A>
-                          <B dataType="Byte">255</B>
-                          <G dataType="Byte">255</G>
-                          <R dataType="Byte">255</R>
-                        </colorTint>
-                        <customMat />
-                        <flipMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+FlipMode" name="None" value="0" />
-                        <gameobj dataType="ObjectRef">3521227267</gameobj>
-                        <offset dataType="Float">0</offset>
-                        <pixelGrid dataType="Bool">false</pixelGrid>
-                        <rect dataType="Struct" type="Duality.Rect">
-                          <H dataType="Float">52</H>
-                          <W dataType="Float">136</W>
-                          <X dataType="Float">-68</X>
-                          <Y dataType="Float">-28.5</Y>
-                        </rect>
-                        <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
-                        <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
-                          <contentPath dataType="String">Data\UI\Pixel.Material.res</contentPath>
-                        </sharedMat>
-                        <spriteIndex dataType="Int">-1</spriteIndex>
-                        <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
-                      </item>
                       <item dataType="Struct" type="Duality.Components.Renderers.TextRenderer" id="109197625">
                         <active dataType="Bool">true</active>
                         <blockAlign dataType="Enum" type="Duality.Alignment" name="Center" value="0" />
@@ -7714,17 +7688,37 @@
                         </text>
                         <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="1168619548">
-                        <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-                        <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                      <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="694879251">
                         <active dataType="Bool">true</active>
+                        <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
+                          <A dataType="Byte">25</A>
+                          <B dataType="Byte">255</B>
+                          <G dataType="Byte">255</G>
+                          <R dataType="Byte">255</R>
+                        </colorTint>
+                        <customMat />
+                        <flipMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+FlipMode" name="None" value="0" />
                         <gameobj dataType="ObjectRef">3521227267</gameobj>
+                        <offset dataType="Float">0</offset>
+                        <pixelGrid dataType="Bool">false</pixelGrid>
+                        <rect dataType="Struct" type="Duality.Rect">
+                          <H dataType="Float">52</H>
+                          <W dataType="Float">136</W>
+                          <X dataType="Float">-68</X>
+                          <Y dataType="Float">-28.5</Y>
+                        </rect>
+                        <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
+                        <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
+                          <contentPath dataType="String">Data\UI\Pixel.Material.res</contentPath>
+                        </sharedMat>
+                        <spriteIndex dataType="Int">-1</spriteIndex>
+                        <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" id="4262286384">
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider" id="4023184960">
                         <_current />
                         <_original dataType="Float">0.2</_original>
-                        <_queue dataType="Struct" type="System.Collections.Generic.Queue`1[[Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step]]" id="1718551132">
-                          <_array dataType="ObjectRef">1291759150</_array>
+                        <_queue dataType="Struct" type="System.Collections.Generic.Queue`1[[Soulstone.Duality.Plugins.Blue.AlphaGlider+Step]]" id="985990732">
+                          <_array dataType="ObjectRef">3684473134</_array>
                           <_head dataType="Int">0</_head>
                           <_size dataType="Int">0</_size>
                           <_tail dataType="Int">0</_tail>
@@ -7733,15 +7727,15 @@
                         <active dataType="Bool">true</active>
                         <gameobj dataType="ObjectRef">3521227267</gameobj>
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Background" id="2754211077">
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Background" id="2800282997">
                         <_ignoreLayout dataType="Bool">false</_ignoreLayout>
-                        <_margins dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.UI.Margins">
+                        <_margins dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Margins">
                           <Bottom dataType="Float">10</Bottom>
                           <Left dataType="Float">10</Left>
                           <Right dataType="Float">10</Right>
                           <Top dataType="Float">10</Top>
                         </_margins>
-                        <_padding dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.UI.Margins">
+                        <_padding dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Margins">
                           <Bottom dataType="Float">20</Bottom>
                           <Left dataType="Float">20</Left>
                           <Right dataType="Float">20</Right>
@@ -7752,7 +7746,13 @@
                         <active dataType="Bool">true</active>
                         <gameobj dataType="ObjectRef">3521227267</gameobj>
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Button" id="43378537">
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="1168619548">
+                        <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+                        <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                        <active dataType="Bool">true</active>
+                        <gameobj dataType="ObjectRef">3521227267</gameobj>
+                      </item>
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Button" id="897281753">
                         <_command />
                         <_normalAlpha dataType="Float">0.1</_normalAlpha>
                         <_x003C_EffectDuration_x003E_k__BackingField dataType="Float">0.2</_x003C_EffectDuration_x003E_k__BackingField>
@@ -7779,11 +7779,11 @@
                       <values dataType="Array" type="System.Object[]" id="2628816056">
                         <item dataType="ObjectRef">3578504485</item>
                         <item dataType="ObjectRef">694879251</item>
-                        <item dataType="ObjectRef">4262286384</item>
+                        <item dataType="ObjectRef">4023184960</item>
                         <item dataType="ObjectRef">1168619548</item>
-                        <item dataType="ObjectRef">43378537</item>
+                        <item dataType="ObjectRef">897281753</item>
                         <item dataType="ObjectRef">109197625</item>
-                        <item dataType="ObjectRef">2754211077</item>
+                        <item dataType="ObjectRef">2800282997</item>
                       </values>
                     </body>
                   </compMap>
@@ -7823,9 +7823,9 @@
                   <scale dataType="Float">1</scale>
                   <scaleAbs dataType="Float">1</scaleAbs>
                 </item>
-                <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Layout" id="3450365714">
+                <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Layout" id="9301634">
                   <_ignoreLayout dataType="Bool">false</_ignoreLayout>
-                  <_orientation dataType="Enum" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Orientation" name="Vertical" value="1" />
+                  <_orientation dataType="Enum" type="Soulstone.Duality.Plugins.Blue.Orientation" name="Vertical" value="1" />
                   <_place dataType="Int">0</_place>
                   <_relativePos dataType="Struct" type="Duality.Vector2">
                     <X dataType="Float">1</X>
@@ -7846,7 +7846,7 @@
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="537909710">
                   <item dataType="ObjectRef">482757300</item>
-                  <item dataType="ObjectRef">3450365714</item>
+                  <item dataType="ObjectRef">9301634</item>
                 </values>
               </body>
             </compMap>
@@ -7898,32 +7898,6 @@
                                     <scale dataType="Float">1</scale>
                                     <scaleAbs dataType="Float">1</scaleAbs>
                                   </item>
-                                  <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="3801314677">
-                                    <active dataType="Bool">true</active>
-                                    <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
-                                      <A dataType="Byte">25</A>
-                                      <B dataType="Byte">255</B>
-                                      <G dataType="Byte">255</G>
-                                      <R dataType="Byte">255</R>
-                                    </colorTint>
-                                    <customMat />
-                                    <flipMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+FlipMode" name="None" value="0" />
-                                    <gameobj dataType="ObjectRef">2332695397</gameobj>
-                                    <offset dataType="Float">0</offset>
-                                    <pixelGrid dataType="Bool">false</pixelGrid>
-                                    <rect dataType="Struct" type="Duality.Rect">
-                                      <H dataType="Float">52</H>
-                                      <W dataType="Float">80</W>
-                                      <X dataType="Float">-40</X>
-                                      <Y dataType="Float">-28.5</Y>
-                                    </rect>
-                                    <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
-                                    <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
-                                      <contentPath dataType="String">Data\UI\Pixel.Material.res</contentPath>
-                                    </sharedMat>
-                                    <spriteIndex dataType="Int">-1</spriteIndex>
-                                    <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
-                                  </item>
                                   <item dataType="Struct" type="Duality.Components.Renderers.TextRenderer" id="3215633051">
                                     <active dataType="Bool">true</active>
                                     <blockAlign dataType="Enum" type="Duality.Alignment" name="Center" value="0" />
@@ -7953,17 +7927,37 @@
                                     </text>
                                     <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                                   </item>
-                                  <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="4275054974">
-                                    <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-                                    <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                                  <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="3801314677">
                                     <active dataType="Bool">true</active>
+                                    <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
+                                      <A dataType="Byte">25</A>
+                                      <B dataType="Byte">255</B>
+                                      <G dataType="Byte">255</G>
+                                      <R dataType="Byte">255</R>
+                                    </colorTint>
+                                    <customMat />
+                                    <flipMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+FlipMode" name="None" value="0" />
                                     <gameobj dataType="ObjectRef">2332695397</gameobj>
+                                    <offset dataType="Float">0</offset>
+                                    <pixelGrid dataType="Bool">false</pixelGrid>
+                                    <rect dataType="Struct" type="Duality.Rect">
+                                      <H dataType="Float">52</H>
+                                      <W dataType="Float">80</W>
+                                      <X dataType="Float">-40</X>
+                                      <Y dataType="Float">-28.5</Y>
+                                    </rect>
+                                    <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
+                                    <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
+                                      <contentPath dataType="String">Data\UI\Pixel.Material.res</contentPath>
+                                    </sharedMat>
+                                    <spriteIndex dataType="Int">-1</spriteIndex>
+                                    <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                                   </item>
-                                  <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" id="3073754514">
+                                  <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider" id="2834653090">
                                     <_current />
                                     <_original dataType="Float">0.2</_original>
-                                    <_queue dataType="Struct" type="System.Collections.Generic.Queue`1[[Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step]]" id="3136309430">
-                                      <_array dataType="Array" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step[]" id="2896883552" length="4" />
+                                    <_queue dataType="Struct" type="System.Collections.Generic.Queue`1[[Soulstone.Duality.Plugins.Blue.AlphaGlider+Step]]" id="3008486438">
+                                      <_array dataType="Array" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step[]" id="2292013312" length="4" />
                                       <_head dataType="Int">0</_head>
                                       <_size dataType="Int">0</_size>
                                       <_tail dataType="Int">0</_tail>
@@ -7972,15 +7966,15 @@
                                     <active dataType="Bool">true</active>
                                     <gameobj dataType="ObjectRef">2332695397</gameobj>
                                   </item>
-                                  <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Background" id="1565679207">
+                                  <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Background" id="1611751127">
                                     <_ignoreLayout dataType="Bool">false</_ignoreLayout>
-                                    <_margins dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.UI.Margins">
+                                    <_margins dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Margins">
                                       <Bottom dataType="Float">10</Bottom>
                                       <Left dataType="Float">10</Left>
                                       <Right dataType="Float">10</Right>
                                       <Top dataType="Float">0</Top>
                                     </_margins>
-                                    <_padding dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.UI.Margins">
+                                    <_padding dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Margins">
                                       <Bottom dataType="Float">20</Bottom>
                                       <Left dataType="Float">20</Left>
                                       <Right dataType="Float">20</Right>
@@ -7991,7 +7985,13 @@
                                     <active dataType="Bool">true</active>
                                     <gameobj dataType="ObjectRef">2332695397</gameobj>
                                   </item>
-                                  <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Button" id="3149813963">
+                                  <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="4275054974">
+                                    <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+                                    <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                                    <active dataType="Bool">true</active>
+                                    <gameobj dataType="ObjectRef">2332695397</gameobj>
+                                  </item>
+                                  <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Button" id="4003717179">
                                     <_command />
                                     <_normalAlpha dataType="Float">0.1</_normalAlpha>
                                     <_x003C_EffectDuration_x003E_k__BackingField dataType="Float">0.2</_x003C_EffectDuration_x003E_k__BackingField>
@@ -8018,11 +8018,11 @@
                                   <values dataType="Array" type="System.Object[]" id="2017700968">
                                     <item dataType="ObjectRef">2389972615</item>
                                     <item dataType="ObjectRef">3801314677</item>
-                                    <item dataType="ObjectRef">3073754514</item>
+                                    <item dataType="ObjectRef">2834653090</item>
                                     <item dataType="ObjectRef">4275054974</item>
-                                    <item dataType="ObjectRef">3149813963</item>
+                                    <item dataType="ObjectRef">4003717179</item>
                                     <item dataType="ObjectRef">3215633051</item>
-                                    <item dataType="ObjectRef">1565679207</item>
+                                    <item dataType="ObjectRef">1611751127</item>
                                   </values>
                                 </body>
                               </compMap>
@@ -8062,32 +8062,6 @@
                                     <scale dataType="Float">1</scale>
                                     <scaleAbs dataType="Float">1</scaleAbs>
                                   </item>
-                                  <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="4287062816">
-                                    <active dataType="Bool">true</active>
-                                    <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
-                                      <A dataType="Byte">25</A>
-                                      <B dataType="Byte">255</B>
-                                      <G dataType="Byte">255</G>
-                                      <R dataType="Byte">255</R>
-                                    </colorTint>
-                                    <customMat />
-                                    <flipMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+FlipMode" name="None" value="0" />
-                                    <gameobj dataType="ObjectRef">2818443536</gameobj>
-                                    <offset dataType="Float">0</offset>
-                                    <pixelGrid dataType="Bool">false</pixelGrid>
-                                    <rect dataType="Struct" type="Duality.Rect">
-                                      <H dataType="Float">52</H>
-                                      <W dataType="Float">88</W>
-                                      <X dataType="Float">-44</X>
-                                      <Y dataType="Float">-28.5</Y>
-                                    </rect>
-                                    <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
-                                    <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
-                                      <contentPath dataType="String">Data\UI\Pixel.Material.res</contentPath>
-                                    </sharedMat>
-                                    <spriteIndex dataType="Int">-1</spriteIndex>
-                                    <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
-                                  </item>
                                   <item dataType="Struct" type="Duality.Components.Renderers.TextRenderer" id="3701381190">
                                     <active dataType="Bool">true</active>
                                     <blockAlign dataType="Enum" type="Duality.Alignment" name="Center" value="0" />
@@ -8117,17 +8091,37 @@
                                     </text>
                                     <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                                   </item>
-                                  <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="465835817">
-                                    <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-                                    <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                                  <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="4287062816">
                                     <active dataType="Bool">true</active>
+                                    <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
+                                      <A dataType="Byte">25</A>
+                                      <B dataType="Byte">255</B>
+                                      <G dataType="Byte">255</G>
+                                      <R dataType="Byte">255</R>
+                                    </colorTint>
+                                    <customMat />
+                                    <flipMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+FlipMode" name="None" value="0" />
                                     <gameobj dataType="ObjectRef">2818443536</gameobj>
+                                    <offset dataType="Float">0</offset>
+                                    <pixelGrid dataType="Bool">false</pixelGrid>
+                                    <rect dataType="Struct" type="Duality.Rect">
+                                      <H dataType="Float">52</H>
+                                      <W dataType="Float">88</W>
+                                      <X dataType="Float">-44</X>
+                                      <Y dataType="Float">-28.5</Y>
+                                    </rect>
+                                    <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
+                                    <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
+                                      <contentPath dataType="String">Data\UI\Pixel.Material.res</contentPath>
+                                    </sharedMat>
+                                    <spriteIndex dataType="Int">-1</spriteIndex>
+                                    <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                                   </item>
-                                  <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider" id="3559502653">
+                                  <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider" id="3320401229">
                                     <_current />
                                     <_original dataType="Float">0.2</_original>
-                                    <_queue dataType="Struct" type="System.Collections.Generic.Queue`1[[Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step]]" id="208831825">
-                                      <_array dataType="Array" type="Soulstone.Duality.Plugins.Cupboard.Components.AlphaGlider+Step[]" id="2918255598" length="4" />
+                                    <_queue dataType="Struct" type="System.Collections.Generic.Queue`1[[Soulstone.Duality.Plugins.Blue.AlphaGlider+Step]]" id="880446753">
+                                      <_array dataType="Array" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step[]" id="2989059694" length="4" />
                                       <_head dataType="Int">0</_head>
                                       <_size dataType="Int">0</_size>
                                       <_tail dataType="Int">0</_tail>
@@ -8136,15 +8130,15 @@
                                     <active dataType="Bool">true</active>
                                     <gameobj dataType="ObjectRef">2818443536</gameobj>
                                   </item>
-                                  <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Background" id="2051427346">
+                                  <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Background" id="2097499266">
                                     <_ignoreLayout dataType="Bool">false</_ignoreLayout>
-                                    <_margins dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.UI.Margins">
+                                    <_margins dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Margins">
                                       <Bottom dataType="Float">10</Bottom>
                                       <Left dataType="Float">10</Left>
                                       <Right dataType="Float">10</Right>
                                       <Top dataType="Float">0</Top>
                                     </_margins>
-                                    <_padding dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.UI.Margins">
+                                    <_padding dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Margins">
                                       <Bottom dataType="Float">20</Bottom>
                                       <Left dataType="Float">20</Left>
                                       <Right dataType="Float">20</Right>
@@ -8155,7 +8149,13 @@
                                     <active dataType="Bool">true</active>
                                     <gameobj dataType="ObjectRef">2818443536</gameobj>
                                   </item>
-                                  <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Button" id="3635562102">
+                                  <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.MouseListener" id="465835817">
+                                    <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
+                                    <_x003C_Global_x003E_k__BackingField dataType="Bool">false</_x003C_Global_x003E_k__BackingField>
+                                    <active dataType="Bool">true</active>
+                                    <gameobj dataType="ObjectRef">2818443536</gameobj>
+                                  </item>
+                                  <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Button" id="194498022">
                                     <_command />
                                     <_normalAlpha dataType="Float">0.1</_normalAlpha>
                                     <_x003C_EffectDuration_x003E_k__BackingField dataType="Float">0.2</_x003C_EffectDuration_x003E_k__BackingField>
@@ -8182,11 +8182,11 @@
                                   <values dataType="Array" type="System.Object[]" id="1327296586">
                                     <item dataType="ObjectRef">2875720754</item>
                                     <item dataType="ObjectRef">4287062816</item>
-                                    <item dataType="ObjectRef">3559502653</item>
+                                    <item dataType="ObjectRef">3320401229</item>
                                     <item dataType="ObjectRef">465835817</item>
-                                    <item dataType="ObjectRef">3635562102</item>
+                                    <item dataType="ObjectRef">194498022</item>
                                     <item dataType="ObjectRef">3701381190</item>
-                                    <item dataType="ObjectRef">2051427346</item>
+                                    <item dataType="ObjectRef">2097499266</item>
                                   </values>
                                 </body>
                               </compMap>
@@ -8226,9 +8226,9 @@
                               <scale dataType="Float">1</scale>
                               <scaleAbs dataType="Float">1</scaleAbs>
                             </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Layout" id="1288462430">
+                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Layout" id="2142365646">
                               <_ignoreLayout dataType="Bool">false</_ignoreLayout>
-                              <_orientation dataType="Enum" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Orientation" name="Horizontal" value="0" />
+                              <_orientation dataType="Enum" type="Soulstone.Duality.Plugins.Blue.Orientation" name="Horizontal" value="0" />
                               <_place dataType="Int">1</_place>
                               <_relativePos dataType="Struct" type="Duality.Vector2">
                                 <X dataType="Float">0.5</X>
@@ -8249,7 +8249,7 @@
                             </keys>
                             <values dataType="Array" type="System.Object[]" id="2018182286">
                               <item dataType="ObjectRef">2615821312</item>
-                              <item dataType="ObjectRef">1288462430</item>
+                              <item dataType="ObjectRef">2142365646</item>
                             </values>
                           </body>
                         </compMap>
@@ -8289,32 +8289,6 @@
                               <scale dataType="Float">1</scale>
                               <scaleAbs dataType="Float">1</scaleAbs>
                             </item>
-                            <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="2930501479">
-                              <active dataType="Bool">true</active>
-                              <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
-                                <A dataType="Byte">78</A>
-                                <B dataType="Byte">255</B>
-                                <G dataType="Byte">255</G>
-                                <R dataType="Byte">255</R>
-                              </colorTint>
-                              <customMat />
-                              <flipMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+FlipMode" name="None" value="0" />
-                              <gameobj dataType="ObjectRef">1461882199</gameobj>
-                              <offset dataType="Float">0</offset>
-                              <pixelGrid dataType="Bool">false</pixelGrid>
-                              <rect dataType="Struct" type="Duality.Rect">
-                                <H dataType="Float">40</H>
-                                <W dataType="Float">368</W>
-                                <X dataType="Float">-184</X>
-                                <Y dataType="Float">-21.5</Y>
-                              </rect>
-                              <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
-                              <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
-                                <contentPath dataType="String">Data\UI\Pixel.Material.res</contentPath>
-                              </sharedMat>
-                              <spriteIndex dataType="Int">-1</spriteIndex>
-                              <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
-                            </item>
                             <item dataType="Struct" type="Duality.Components.Renderers.TextRenderer" id="2344819853">
                               <active dataType="Bool">true</active>
                               <blockAlign dataType="Enum" type="Duality.Alignment" name="Center" value="0" />
@@ -8344,15 +8318,41 @@
                               </text>
                               <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                             </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Background" id="694866009">
+                            <item dataType="Struct" type="Duality.Components.Renderers.SpriteRenderer" id="2930501479">
+                              <active dataType="Bool">true</active>
+                              <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
+                                <A dataType="Byte">78</A>
+                                <B dataType="Byte">255</B>
+                                <G dataType="Byte">255</G>
+                                <R dataType="Byte">255</R>
+                              </colorTint>
+                              <customMat />
+                              <flipMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+FlipMode" name="None" value="0" />
+                              <gameobj dataType="ObjectRef">1461882199</gameobj>
+                              <offset dataType="Float">0</offset>
+                              <pixelGrid dataType="Bool">false</pixelGrid>
+                              <rect dataType="Struct" type="Duality.Rect">
+                                <H dataType="Float">40</H>
+                                <W dataType="Float">368</W>
+                                <X dataType="Float">-184</X>
+                                <Y dataType="Float">-21.5</Y>
+                              </rect>
+                              <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
+                              <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
+                                <contentPath dataType="String">Data\UI\Pixel.Material.res</contentPath>
+                              </sharedMat>
+                              <spriteIndex dataType="Int">-1</spriteIndex>
+                              <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
+                            </item>
+                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Background" id="740937929">
                               <_ignoreLayout dataType="Bool">false</_ignoreLayout>
-                              <_margins dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.UI.Margins">
+                              <_margins dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Margins">
                                 <Bottom dataType="Float">10</Bottom>
                                 <Left dataType="Float">10</Left>
                                 <Right dataType="Float">10</Right>
                                 <Top dataType="Float">10</Top>
                               </_margins>
-                              <_padding dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.UI.Margins">
+                              <_padding dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Margins">
                                 <Bottom dataType="Float">13</Bottom>
                                 <Left dataType="Float">20</Left>
                                 <Right dataType="Float">20</Right>
@@ -8379,7 +8379,7 @@
                               <item dataType="ObjectRef">1519159417</item>
                               <item dataType="ObjectRef">2344819853</item>
                               <item dataType="ObjectRef">2930501479</item>
-                              <item dataType="ObjectRef">694866009</item>
+                              <item dataType="ObjectRef">740937929</item>
                             </values>
                           </body>
                         </compMap>
@@ -8445,20 +8445,15 @@
                         <spriteIndex dataType="Int">-1</spriteIndex>
                         <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.ResizeListener" id="3189736355">
-                        <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
-                        <active dataType="Bool">true</active>
-                        <gameobj dataType="ObjectRef">3567887967</gameobj>
-                      </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Background" id="2800871777">
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Background" id="2846943697">
                         <_ignoreLayout dataType="Bool">false</_ignoreLayout>
-                        <_margins dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.UI.Margins">
+                        <_margins dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Margins">
                           <Bottom dataType="Float">10</Bottom>
                           <Left dataType="Float">10</Left>
                           <Right dataType="Float">10</Right>
                           <Top dataType="Float">10</Top>
                         </_margins>
-                        <_padding dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.UI.Margins">
+                        <_padding dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Margins">
                           <Bottom dataType="Float">10</Bottom>
                           <Left dataType="Float">10</Left>
                           <Right dataType="Float">10</Right>
@@ -8469,14 +8464,19 @@
                         <active dataType="Bool">true</active>
                         <gameobj dataType="ObjectRef">3567887967</gameobj>
                       </item>
-                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Layout" id="2297806303">
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Layout" id="3151709519">
                         <_ignoreLayout dataType="Bool">false</_ignoreLayout>
-                        <_orientation dataType="Enum" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Orientation" name="Vertical" value="1" />
+                        <_orientation dataType="Enum" type="Soulstone.Duality.Plugins.Blue.Orientation" name="Vertical" value="1" />
                         <_place dataType="Int">0</_place>
                         <_relativePos dataType="Struct" type="Duality.Vector2">
                           <X dataType="Float">0.5</X>
                           <Y dataType="Float">0.5</Y>
                         </_relativePos>
+                        <active dataType="Bool">true</active>
+                        <gameobj dataType="ObjectRef">3567887967</gameobj>
+                      </item>
+                      <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Input.ResizeListener" id="3189736355">
+                        <_x003C_EditorUpdatable_x003E_k__BackingField dataType="Bool">false</_x003C_EditorUpdatable_x003E_k__BackingField>
                         <active dataType="Bool">true</active>
                         <gameobj dataType="ObjectRef">3567887967</gameobj>
                       </item>
@@ -8495,9 +8495,9 @@
                       </keys>
                       <values dataType="Array" type="System.Object[]" id="3687277846">
                         <item dataType="ObjectRef">3625165185</item>
-                        <item dataType="ObjectRef">2297806303</item>
+                        <item dataType="ObjectRef">3151709519</item>
                         <item dataType="ObjectRef">741539951</item>
-                        <item dataType="ObjectRef">2800871777</item>
+                        <item dataType="ObjectRef">2846943697</item>
                         <item dataType="ObjectRef">3189736355</item>
                       </values>
                     </body>
@@ -8519,7 +8519,7 @@
             </children>
             <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="3821178728">
               <_items dataType="Array" type="Duality.Component[]" id="308646513" length="4">
-                <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Contexts.ResetDialogContext" id="1127518035">
+                <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.ResetDialogContext" id="2666338289">
                   <active dataType="Bool">false</active>
                   <gameobj dataType="ObjectRef">2735503467</gameobj>
                 </item>
@@ -8530,10 +8530,10 @@
               <header />
               <body>
                 <keys dataType="Array" type="System.Object[]" id="4286878948">
-                  <item dataType="Type" id="1141036996" value="Soulstone.Duality.Plugins.Cupboard.Components.UI.Contexts.ResetDialogContext" />
+                  <item dataType="Type" id="1141036996" value="Soulstone.Duality.Plugins.Cupboard.Components.UI.ResetDialogContext" />
                 </keys>
                 <values dataType="Array" type="System.Object[]" id="4190363158">
-                  <item dataType="ObjectRef">1127518035</item>
+                  <item dataType="ObjectRef">2666338289</item>
                 </values>
               </body>
             </compMap>
@@ -8554,7 +8554,7 @@
       </children>
       <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="1461280456">
         <_items dataType="Array" type="Duality.Component[]" id="3249607617" length="4">
-          <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.Contexts.GameContext" id="2206042822">
+          <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Components.UI.GameContext" id="846797404">
             <_menuScene dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Scene]]">
               <contentPath dataType="String">Data\Menu.Scene.res</contentPath>
             </_menuScene>
@@ -8568,10 +8568,10 @@
         <header />
         <body>
           <keys dataType="Array" type="System.Object[]" id="3679233668">
-            <item dataType="Type" id="587473988" value="Soulstone.Duality.Plugins.Cupboard.Components.UI.Contexts.GameContext" />
+            <item dataType="Type" id="587473988" value="Soulstone.Duality.Plugins.Cupboard.Components.UI.GameContext" />
           </keys>
           <values dataType="Array" type="System.Object[]" id="2100258966">
-            <item dataType="ObjectRef">2206042822</item>
+            <item dataType="ObjectRef">846797404</item>
           </values>
         </body>
       </compMap>

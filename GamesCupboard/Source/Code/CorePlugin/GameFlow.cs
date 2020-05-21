@@ -9,6 +9,8 @@ using Duality;
 using Duality.Drawing;
 using Duality.Resources;
 
+using Soulstone.Duality.Plugins.Blue;
+
 using Soulstone.Duality.Plugins.Cupboard.Multiplayer;
 using Soulstone.Duality.Plugins.Cupboard.Components;
 using Soulstone.Duality.Plugins.Cupboard.Components.Game;

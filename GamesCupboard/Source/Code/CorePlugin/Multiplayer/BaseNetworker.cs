@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using Duality;
 using Duality.Drawing;
 
-using Soulstone.Duality.Plugins.Cupboard.UI;
 using Lidgren.Network;
 
 namespace Soulstone.Duality.Plugins.Cupboard.Multiplayer
