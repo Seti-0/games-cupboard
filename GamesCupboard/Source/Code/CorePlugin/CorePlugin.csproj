@@ -119,11 +119,9 @@
     <Compile Include="State\StateEntityManager.cs" />
     <Compile Include="UI\ContextHelper.cs" />
     <Compile Include="UI\GameFlow.cs" />
-    <Compile Include="UI\IContextInitializable.cs" />
-    <Compile Include="UI\IContextUpdatable.cs" />
     <Compile Include="UI\ListenerCollection.cs" />
     <Compile Include="UI\Margins.cs" />
-    <Compile Include="UI\UI.cs" />
+    <Compile Include="UI\OldContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="EmbeddedResources\plan.png" />
