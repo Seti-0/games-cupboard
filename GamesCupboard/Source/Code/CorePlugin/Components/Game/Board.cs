@@ -125,9 +125,8 @@ namespace Soulstone.Duality.Plugins.Cupboard.Components
 			var container = Container;
 			if(container != null)
 			{
-				var copy = new List<GameObject>(container.Children);
-				foreach (var obj in copy)
-					obj.Dispose();
+				foreach (var obj in container.Children)
+					obj.DisposeLater();
 			}
 		}
 

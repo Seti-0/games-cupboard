@@ -50,29 +50,11 @@ namespace Soulstone.Duality.Plugins.Cupboard.Components
 
         private void CheckRoster(bool force = false)
         {
-            // With force true, this is the current general purpose nuke.
-            // I need to make a library that would keep a better eye on this stuff though, it has me running in circles.
-
             if (force || _objPool == null)
-            {
-                _objPool?.Clear();
+                Clear();
 
-                if (_pawns != null)
-                {
-                    foreach (var obj in _pawns)
-                        obj.Dispose();
-
-                    _pawns.Clear();
-                }
-
-                if (!Warnings.NullOrDisposed(Scene))
-                {
-                    foreach (var board in Scene.FindComponents<Board>())
-                        board.Clear();
-                }
-
+            if (_objPool == null)
                 _objPool = new GameObjectPool();
-            }
 
             if (_pawns == null)
                 _pawns = new List<GameObject>();
@@ -83,12 +65,10 @@ namespace Soulstone.Duality.Plugins.Cupboard.Components
             _objPool?.Clear();
             _pawns?.Clear();
 
-            if (!Warnings.NullOrDisposed(GameObj))
+            if (!Warnings.NullOrDisposed(Scene))
             {
-                // I'm not convinced that DisposeLater() works in all situations.
-                var toDispose = GameObj.Children.ToArray();
-                foreach (var gameObj in toDispose)
-                    gameObj.Dispose();
+                foreach (var board in Scene.FindComponents<Board>())
+                    board.Clear();
             }
         }
 

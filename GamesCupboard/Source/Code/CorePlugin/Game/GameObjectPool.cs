@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Duality;
 using Duality.Resources;
-
+using Soulstone.Duality.Plugins.Cupboard.Components;
 using Soulstone.Duality.Utility;
 
 namespace Soulstone.Duality.Plugins.Cupboard.Game
@@ -110,14 +110,24 @@ namespace Soulstone.Duality.Plugins.Cupboard.Game
             return Get(prefab);
         }
 
+        public GameObject Create(ContentRef<Prefab> prefab)
+        {
+            return Get(prefab, forceCreate: true);
+        }
+
         public GameObject Get(ContentRef<Prefab> prefab)
+        {
+            return Get(prefab, forceCreate: false);
+        }
+
+        private GameObject Get(ContentRef<Prefab> prefab, bool forceCreate)
         {
             string key = prefab.Path;
             GameObject obj = null;
-            
-            if (_inactive != null)
+
+            if (!forceCreate && _inactive != null)
                 if (_inactive.TryGetValue(key, out var inactiveQueue))
-                    if(inactiveQueue.Count > 0)
+                    if (inactiveQueue.Count > 0)
                         obj = inactiveQueue.Dequeue();
 
             if (Warnings.NullOrDisposed(obj, warn: false))
@@ -125,6 +135,8 @@ namespace Soulstone.Duality.Plugins.Cupboard.Game
                 if (Warnings.NullOrDisposed(prefab.Res)) return null;
                 obj = prefab.Res.Instantiate();
                 if (Warnings.NullOrDisposed(obj)) return null;
+
+                obj.AddComponent<Transient>();
 
                 if (_roster == null)
                     _roster = new HashSet<GameObject>();
@@ -144,8 +156,8 @@ namespace Soulstone.Duality.Plugins.Cupboard.Game
             }
 
             activeQueue.Enqueue(obj);
-
             obj.ActiveSingle = true;
+
             return obj;
         }
     }

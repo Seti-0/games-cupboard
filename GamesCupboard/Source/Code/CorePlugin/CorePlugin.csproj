@@ -82,6 +82,7 @@
     <Compile Include="Components\Contexts\GameContext.cs" />
     <Compile Include="Components\Contexts\MainMenuContext.cs" />
     <Compile Include="Components\Contexts\ResetDialogContext.cs" />
+    <Compile Include="Components\Transient.cs" />
     <Compile Include="CorePlugin.cs" />
     <Compile Include="CupboardApp.cs" />
     <Compile Include="Game\D6.cs" />

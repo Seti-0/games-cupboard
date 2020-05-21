@@ -2290,7 +2290,7 @@
                           <Z dataType="Float">0</Z>
                         </pos>
                         <posAbs dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">308</X>
+                          <X dataType="Float">336</X>
                           <Y dataType="Float">36</Y>
                           <Z dataType="Float">0</Z>
                         </posAbs>
@@ -2321,7 +2321,7 @@
                           <lineAlign dataType="Enum" type="Duality.Alignment" name="Left" value="1" />
                           <maxHeight dataType="Int">0</maxHeight>
                           <maxWidth dataType="Int">0</maxWidth>
-                          <sourceText dataType="String">Sync started.</sourceText>
+                          <sourceText dataType="String">Hosting (Port: 8889)</sourceText>
                           <wrapMode dataType="Enum" type="Duality.Drawing.FormattedText+WrapMode" name="Word" value="1" />
                         </text>
                         <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
@@ -2330,8 +2330,8 @@
                         <active dataType="Bool">true</active>
                         <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
                           <A dataType="Byte">0</A>
-                          <B dataType="Byte">255</B>
-                          <G dataType="Byte">0</G>
+                          <B dataType="Byte">0</B>
+                          <G dataType="Byte">255</G>
                           <R dataType="Byte">0</R>
                         </colorTint>
                         <customMat />
@@ -2341,8 +2341,8 @@
                         <pixelGrid dataType="Bool">false</pixelGrid>
                         <rect dataType="Struct" type="Duality.Rect">
                           <H dataType="Float">32</H>
-                          <W dataType="Float">124</W>
-                          <X dataType="Float">-62</X>
+                          <W dataType="Float">180</W>
+                          <X dataType="Float">-90</X>
                           <Y dataType="Float">-18.5</Y>
                         </rect>
                         <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
@@ -2354,54 +2354,11 @@
                       </item>
                       <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider" id="2390707715">
                         <_current />
-                        <_original dataType="Float">0</_original>
+                        <_original dataType="Float">1</_original>
                         <_queue dataType="Struct" type="System.Collections.Generic.Queue`1[[Soulstone.Duality.Plugins.Blue.AlphaGlider+Step]]" id="2672598071">
-                          <_array dataType="Array" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step[]" id="3827319438" length="8">
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="1510209744">
-                              <Duration dataType="Float">0.0333333351</Duration>
-                              <Finite dataType="Bool">true</Finite>
-                              <Patient dataType="Bool">false</Patient>
-                              <Target dataType="Float">1</Target>
-                              <Text dataType="Bool">true</Text>
-                            </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="2376286830">
-                              <Duration dataType="Float">0.2</Duration>
-                              <Finite dataType="Bool">true</Finite>
-                              <Patient dataType="Bool">true</Patient>
-                              <Target dataType="Float">0.4</Target>
-                              <Text dataType="Bool">false</Text>
-                            </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="1980774060">
-                              <Duration dataType="Float">0.2</Duration>
-                              <Finite dataType="Bool">true</Finite>
-                              <Patient dataType="Bool">true</Patient>
-                              <Target dataType="Float">0</Target>
-                              <Text dataType="Bool">false</Text>
-                            </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="1975223314">
-                              <Duration dataType="Float">0.6262195</Duration>
-                              <Finite dataType="Bool">true</Finite>
-                              <Patient dataType="Bool">true</Patient>
-                              <Target dataType="Float">0</Target>
-                              <Text dataType="Bool">false</Text>
-                            </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="380464776">
-                              <Duration dataType="Float">0.2</Duration>
-                              <Finite dataType="Bool">true</Finite>
-                              <Patient dataType="Bool">true</Patient>
-                              <Target dataType="Float">0</Target>
-                              <Text dataType="Bool">false</Text>
-                            </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="1180910438">
-                              <Duration dataType="Float">0.06666667</Duration>
-                              <Finite dataType="Bool">true</Finite>
-                              <Patient dataType="Bool">true</Patient>
-                              <Target dataType="Float">0</Target>
-                              <Text dataType="Bool">true</Text>
-                            </item>
-                          </_array>
-                          <_head dataType="Int">0</_head>
-                          <_size dataType="Int">6</_size>
+                          <_array dataType="Array" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step[]" id="3827319438" length="8" />
+                          <_head dataType="Int">6</_head>
+                          <_size dataType="Int">0</_size>
                           <_tail dataType="Int">6</_tail>
                         </_queue>
                         <_timeRemaining dataType="Float">0</_timeRemaining>
@@ -2431,15 +2388,15 @@
                         <_lastMessage dataType="Struct" type="Soulstone.Duality.Plugins.Blue.Notification" id="4169366569">
                           <Color dataType="Struct" type="Duality.Drawing.ColorRgba">
                             <A dataType="Byte">255</A>
-                            <B dataType="Byte">255</B>
-                            <G dataType="Byte">0</G>
+                            <B dataType="Byte">0</B>
+                            <G dataType="Byte">255</G>
                             <R dataType="Byte">0</R>
                           </Color>
-                          <Duration dataType="Float">0.6262195</Duration>
+                          <Duration dataType="Float">3</Duration>
                           <Finite dataType="Bool">true</Finite>
-                          <Text dataType="String">Sync started.</Text>
+                          <Text dataType="String">Hosting (Port: 8889)</Text>
                         </_lastMessage>
-                        <_lastMessageTime dataType="Double">0</_lastMessageTime>
+                        <_lastMessageTime dataType="Double">27.269336499999998</_lastMessageTime>
                         <_x003C_ActiveAlpha_x003E_k__BackingField dataType="Float">0</_x003C_ActiveAlpha_x003E_k__BackingField>
                         <_x003C_Channel_x003E_k__BackingField dataType="String">Main</_x003C_Channel_x003E_k__BackingField>
                         <_x003C_Duration_x003E_k__BackingField dataType="Float">5</_x003C_Duration_x003E_k__BackingField>
@@ -2497,7 +2454,7 @@
                         <gameobj dataType="ObjectRef">2583536140</gameobj>
                         <ignoreParent dataType="Bool">false</ignoreParent>
                         <pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">-26</X>
+                          <X dataType="Float">-54</X>
                           <Y dataType="Float">0</Y>
                           <Z dataType="Float">0</Z>
                         </pos>
@@ -2513,7 +2470,7 @@
                         <active dataType="Bool">true</active>
                         <blockAlign dataType="Enum" type="Duality.Alignment" name="Center" value="0" />
                         <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
-                          <A dataType="Byte">0</A>
+                          <A dataType="Byte">255</A>
                           <B dataType="Byte">255</B>
                           <G dataType="Byte">255</G>
                           <R dataType="Byte">255</R>
@@ -2533,7 +2490,7 @@
                           <lineAlign dataType="Enum" type="Duality.Alignment" name="Left" value="1" />
                           <maxHeight dataType="Int">0</maxHeight>
                           <maxWidth dataType="Int">0</maxWidth>
-                          <sourceText dataType="String">51.37.245.201</sourceText>
+                          <sourceText dataType="String">51.37.251.163</sourceText>
                           <wrapMode dataType="Enum" type="Duality.Drawing.FormattedText+WrapMode" name="Word" value="1" />
                         </text>
                         <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
@@ -2565,46 +2522,28 @@
                         <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group1" value="2" />
                       </item>
                       <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider" id="3085493833">
-                        <_current />
+                        <_current dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="2305364341">
+                          <Duration dataType="Float">-1</Duration>
+                          <Finite dataType="Bool">false</Finite>
+                          <Patient dataType="Bool">true</Patient>
+                          <Target dataType="Float">0</Target>
+                          <Text dataType="Bool">false</Text>
+                        </_current>
                         <_original dataType="Float">0</_original>
-                        <_queue dataType="Struct" type="System.Collections.Generic.Queue`1[[Soulstone.Duality.Plugins.Blue.AlphaGlider+Step]]" id="2305364341">
-                          <_array dataType="Array" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step[]" id="4029483638" length="8">
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="2483423200">
-                              <Duration dataType="Float">0.0333333351</Duration>
-                              <Finite dataType="Bool">true</Finite>
-                              <Patient dataType="Bool">false</Patient>
-                              <Target dataType="Float">1</Target>
-                              <Text dataType="Bool">true</Text>
-                            </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="2005070734">
-                              <Duration dataType="Float">0.2</Duration>
-                              <Finite dataType="Bool">true</Finite>
-                              <Patient dataType="Bool">true</Patient>
-                              <Target dataType="Float">0.4</Target>
-                              <Text dataType="Bool">false</Text>
-                            </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="1113396988">
+                        <_queue dataType="Struct" type="System.Collections.Generic.Queue`1[[Soulstone.Duality.Plugins.Blue.AlphaGlider+Step]]" id="676315336">
+                          <_array dataType="Array" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step[]" id="2873969119" length="8">
+                            <item />
+                            <item />
+                            <item />
+                            <item />
+                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="1220391534">
                               <Duration dataType="Float">0.2</Duration>
                               <Finite dataType="Bool">true</Finite>
                               <Patient dataType="Bool">true</Patient>
                               <Target dataType="Float">0</Target>
                               <Text dataType="Bool">false</Text>
                             </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="1399625490">
-                              <Duration dataType="Float">-1</Duration>
-                              <Finite dataType="Bool">false</Finite>
-                              <Patient dataType="Bool">true</Patient>
-                              <Target dataType="Float">0</Target>
-                              <Text dataType="Bool">false</Text>
-                            </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="771106456">
-                              <Duration dataType="Float">0.2</Duration>
-                              <Finite dataType="Bool">true</Finite>
-                              <Patient dataType="Bool">true</Patient>
-                              <Target dataType="Float">0</Target>
-                              <Text dataType="Bool">false</Text>
-                            </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="3676400038">
+                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="2848245706">
                               <Duration dataType="Float">0.06666667</Duration>
                               <Finite dataType="Bool">true</Finite>
                               <Patient dataType="Bool">true</Patient>
@@ -2612,11 +2551,11 @@
                               <Text dataType="Bool">true</Text>
                             </item>
                           </_array>
-                          <_head dataType="Int">0</_head>
-                          <_size dataType="Int">6</_size>
+                          <_head dataType="Int">4</_head>
+                          <_size dataType="Int">2</_size>
                           <_tail dataType="Int">6</_tail>
                         </_queue>
-                        <_timeRemaining dataType="Float">0</_timeRemaining>
+                        <_timeRemaining dataType="Float">-1</_timeRemaining>
                         <active dataType="Bool">true</active>
                         <gameobj dataType="ObjectRef">2583536140</gameobj>
                       </item>
@@ -2649,9 +2588,9 @@
                           </Color>
                           <Duration dataType="Float">-1</Duration>
                           <Finite dataType="Bool">false</Finite>
-                          <Text dataType="String">51.37.245.201</Text>
+                          <Text dataType="String">51.37.251.163</Text>
                         </_lastMessage>
-                        <_lastMessageTime dataType="Double">0</_lastMessageTime>
+                        <_lastMessageTime dataType="Double">27.269336499999998</_lastMessageTime>
                         <_x003C_ActiveAlpha_x003E_k__BackingField dataType="Float">0</_x003C_ActiveAlpha_x003E_k__BackingField>
                         <_x003C_Channel_x003E_k__BackingField dataType="String">ExternalIP</_x003C_Channel_x003E_k__BackingField>
                         <_x003C_Duration_x003E_k__BackingField dataType="Float">5</_x003C_Duration_x003E_k__BackingField>
@@ -2709,7 +2648,7 @@
                         <gameobj dataType="ObjectRef">1727746805</gameobj>
                         <ignoreParent dataType="Bool">false</ignoreParent>
                         <pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">-144</X>
+                          <X dataType="Float">-172</X>
                           <Y dataType="Float">0</Y>
                           <Z dataType="Float">0</Z>
                         </pos>
@@ -2873,12 +2812,12 @@
                   <gameobj dataType="ObjectRef">617346391</gameobj>
                   <ignoreParent dataType="Bool">false</ignoreParent>
                   <pos dataType="Struct" type="Duality.Vector3">
-                    <X dataType="Float">190</X>
+                    <X dataType="Float">218</X>
                     <Y dataType="Float">36</Y>
                     <Z dataType="Float">0</Z>
                   </pos>
                   <posAbs dataType="Struct" type="Duality.Vector3">
-                    <X dataType="Float">190</X>
+                    <X dataType="Float">218</X>
                     <Y dataType="Float">36</Y>
                     <Z dataType="Float">0</Z>
                   </posAbs>
@@ -3124,7 +3063,7 @@
                         <active dataType="Bool">true</active>
                         <blockAlign dataType="Enum" type="Duality.Alignment" name="Center" value="0" />
                         <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
-                          <A dataType="Byte">255</A>
+                          <A dataType="Byte">0</A>
                           <B dataType="Byte">61</B>
                           <G dataType="Byte">115</G>
                           <R dataType="Byte">234</R>
@@ -3179,53 +3118,10 @@
                         <_current />
                         <_original dataType="Float">1</_original>
                         <_queue dataType="Struct" type="System.Collections.Generic.Queue`1[[Soulstone.Duality.Plugins.Blue.AlphaGlider+Step]]" id="581085594">
-                          <_array dataType="Array" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step[]" id="2584998784" length="8">
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="3964309916">
-                              <Duration dataType="Float">0.166666672</Duration>
-                              <Finite dataType="Bool">true</Finite>
-                              <Patient dataType="Bool">false</Patient>
-                              <Target dataType="Float">1</Target>
-                              <Text dataType="Bool">true</Text>
-                            </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="3858071574">
-                              <Duration dataType="Float">1</Duration>
-                              <Finite dataType="Bool">true</Finite>
-                              <Patient dataType="Bool">true</Patient>
-                              <Target dataType="Float">0</Target>
-                              <Text dataType="Bool">false</Text>
-                            </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="890171400">
-                              <Duration dataType="Float">1</Duration>
-                              <Finite dataType="Bool">true</Finite>
-                              <Patient dataType="Bool">true</Patient>
-                              <Target dataType="Float">0</Target>
-                              <Text dataType="Bool">false</Text>
-                            </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="157909938">
-                              <Duration dataType="Float">-1</Duration>
-                              <Finite dataType="Bool">false</Finite>
-                              <Patient dataType="Bool">true</Patient>
-                              <Target dataType="Float">0</Target>
-                              <Text dataType="Bool">false</Text>
-                            </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="31397940">
-                              <Duration dataType="Float">1</Duration>
-                              <Finite dataType="Bool">true</Finite>
-                              <Patient dataType="Bool">true</Patient>
-                              <Target dataType="Float">0</Target>
-                              <Text dataType="Bool">false</Text>
-                            </item>
-                            <item dataType="Struct" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step" id="1878658446">
-                              <Duration dataType="Float">0.333333343</Duration>
-                              <Finite dataType="Bool">true</Finite>
-                              <Patient dataType="Bool">true</Patient>
-                              <Target dataType="Float">0</Target>
-                              <Text dataType="Bool">true</Text>
-                            </item>
-                          </_array>
-                          <_head dataType="Int">0</_head>
-                          <_size dataType="Int">6</_size>
-                          <_tail dataType="Int">6</_tail>
+                          <_array dataType="Array" type="Soulstone.Duality.Plugins.Blue.AlphaGlider+Step[]" id="2584998784" length="8" />
+                          <_head dataType="Int">2</_head>
+                          <_size dataType="Int">0</_size>
+                          <_tail dataType="Int">2</_tail>
                         </_queue>
                         <_timeRemaining dataType="Float">0</_timeRemaining>
                         <active dataType="Bool">true</active>
