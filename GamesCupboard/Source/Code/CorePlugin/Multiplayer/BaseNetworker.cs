@@ -151,7 +151,7 @@ namespace Soulstone.Duality.Plugins.Cupboard.Multiplayer
 
         private void LogStatusWarning(string action)
         {
-            Logs.Game.WriteWarning($"Cannot {action} while {Status}");
+            Logs.Game.WriteWarning($"Cannot {action}. (Status: {Status})");
         }
 
         public bool Host(int port)
@@ -321,7 +321,7 @@ namespace Soulstone.Duality.Plugins.Cupboard.Multiplayer
 
             if (!Connected)
             {
-                LogStatusWarning("send messages");
+                if (!Hosting) LogStatusWarning("send messages");
                 return;
             }
 
