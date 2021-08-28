@@ -13,8 +13,6 @@ namespace Soulstone.Duality.Plugins.Cupboard.Multiplayer
 {
     public class BaseNetworker : INetworker
     {
-        private static readonly string AppID = "Seti's Chinese Checkers";
-
         public event EventHandler<ServerJoinedEventArgs> Joined;
         public event EventHandler<ClientDisconnectedEventArgs> Disconnected;
         public event EventHandler<NetErrorEventArgs> UnexpectedError;
@@ -22,6 +20,8 @@ namespace Soulstone.Duality.Plugins.Cupboard.Multiplayer
 
         [DontSerialize] private NetServer _server = null;
         [DontSerialize] private NetClient _client = null;
+
+        public string AppID { get; set; } = "My App";
 
         public bool Hosting
         {
@@ -251,7 +251,7 @@ namespace Soulstone.Duality.Plugins.Cupboard.Multiplayer
                 Logs.Game.WriteWarning("Recieved empty data message.");
             else
             {
-                OnDataRecieved(new DataRecievedEventArgs(message.SenderConnection, false, channel, data));
+                OnDataRecieved(new DataRecievedEventArgs(message.SenderConnection.RemoteEndPoint, false, channel, data));
 
                 if (Hosting)
                 {
@@ -279,7 +279,7 @@ namespace Soulstone.Duality.Plugins.Cupboard.Multiplayer
 
             var status = (NetConnectionStatus) message.ReadByte();
             output = $"Status Changed: {status}.";
-
+            
             if(status == NetConnectionStatus.Connected)
             {
                 var connection = message.SenderConnection;
@@ -298,11 +298,11 @@ namespace Soulstone.Duality.Plugins.Cupboard.Multiplayer
                     clientName = Name;
                 }
 
-                OnJoin(new ServerJoinedEventArgs(connection, true, ServerName, clientName));
+                OnJoin(new ServerJoinedEventArgs(connection.RemoteEndPoint, true, ServerName, clientName));
             }
 
             if(status == NetConnectionStatus.Disconnected)
-                OnDisconnect(new ClientDisconnectedEventArgs(message.SenderConnection, false, message.ReadString()));
+                OnDisconnect(new ClientDisconnectedEventArgs(message.SenderConnection.RemoteEndPoint, false, message.ReadString()));
         }
 
         protected void OnJoin(ServerJoinedEventArgs e)
@@ -315,7 +315,12 @@ namespace Soulstone.Duality.Plugins.Cupboard.Multiplayer
             Disconnected?.Invoke(this, e);
         }
 
-        public void SendData(int channel, string data, bool reliable = true, IList<NetConnection> target = null)
+        public void SendData(int channel, string data)
+        {
+            SendData(channel, data, null);
+        }
+
+        public void SendData(int channel, string data, IList<NetConnection> target = null)
         {
             NetPeer peer;
 
@@ -333,11 +338,11 @@ namespace Soulstone.Duality.Plugins.Cupboard.Multiplayer
 
             if (peer == null)
                 return;
-
+            
             var message = peer.CreateMessage();
             message.WriteVariableInt32(channel);
             message.Write(data);
-
+            
             var method = NetDeliveryMethod.ReliableOrdered;
 
             if (target != null)

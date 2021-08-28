@@ -54,13 +54,13 @@
         <TypeID dataType="String">Data\Games\Trafalgar\Prefabs\Red Ship.Prefab.res</TypeID>
       </item>
       <item dataType="Struct" type="Soulstone.Duality.Plugins.Cupboard.Resources.Save+Pawn" id="3270588056">
-        <Angle dataType="Float">-2.09439516</Angle>
+        <Angle dataType="Float">4.18879032</Angle>
         <Bound dataType="Bool">true</Bound>
         <Name dataType="String">4 (Blue Ship.Prefab)</Name>
         <ParentName dataType="String">Game/Board/Main/Pawns</ParentName>
         <Position dataType="Struct" type="Duality.Vector3">
-          <X dataType="Float">900</X>
-          <Y dataType="Float">866.0254</Y>
+          <X dataType="Float">600</X>
+          <Y dataType="Float">692.8203</Y>
           <Z dataType="Float">0</Z>
         </Position>
         <SelectionGroupName dataType="String">FS Redoubtable</SelectionGroupName>
@@ -72,8 +72,8 @@
         <Name dataType="String">5 (Blue Ship.Prefab)</Name>
         <ParentName dataType="String">Game/Board/Main/Pawns</ParentName>
         <Position dataType="Struct" type="Duality.Vector3">
-          <X dataType="Float">1100</X>
-          <Y dataType="Float">866.0254</Y>
+          <X dataType="Float">1000</X>
+          <Y dataType="Float">346.410156</Y>
           <Z dataType="Float">0</Z>
         </Position>
         <SelectionGroupName dataType="String">FS Scipion</SelectionGroupName>
@@ -98,8 +98,8 @@
         <Name dataType="String">7 (Blue Ship.Prefab)</Name>
         <ParentName dataType="String">Game/Board/Main/Pawns</ParentName>
         <Position dataType="Struct" type="Duality.Vector3">
-          <X dataType="Float">1400</X>
-          <Y dataType="Float">692.8203</Y>
+          <X dataType="Float">1000</X>
+          <Y dataType="Float">0</Y>
           <Z dataType="Float">0</Z>
         </Position>
         <SelectionGroupName dataType="String">SPS Principe de Asturias</SelectionGroupName>

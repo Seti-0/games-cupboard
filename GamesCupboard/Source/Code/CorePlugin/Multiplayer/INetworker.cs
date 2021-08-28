@@ -10,6 +10,8 @@ namespace Soulstone.Duality.Plugins.Cupboard.Multiplayer
 {
     public interface INetworker : IDisposable
     {
+        string AppID { get; set; }
+
         string Name { get; set; }
         string ServerName { get; }
         bool Hosting { get; }
@@ -28,7 +30,7 @@ namespace Soulstone.Duality.Plugins.Cupboard.Multiplayer
         void Join(string ip, int port);
         void Quit();
 
-        void SendData(int channel, string data, bool reliable = true, IList<NetConnection> target = null);
+        void SendData(int channel, string data);
 
         void Update();
     }

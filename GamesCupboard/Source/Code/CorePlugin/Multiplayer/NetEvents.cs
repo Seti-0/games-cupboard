@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,11 +14,12 @@ namespace Soulstone.Duality.Plugins.Cupboard.Multiplayer
     public class NetClientEventArgs : NetEventArgs
     {
         public bool Self { get; }
-        public NetConnection Connection { get; }
+        public IPEndPoint RemoteEndPoint { get; }
 
-        public NetClientEventArgs(NetConnection connection, bool self)
+
+        public NetClientEventArgs(IPEndPoint remoteEndPoint, bool self)
         {
-            Connection = connection;
+            RemoteEndPoint = remoteEndPoint;
             Self = self;
         }
     }
@@ -26,7 +28,7 @@ namespace Soulstone.Duality.Plugins.Cupboard.Multiplayer
     {
         public string ServerName { get; }
 
-        public ServerDiscoveredEventArgs(NetConnection connection, bool self, string serverName) : base(connection, self)
+        public ServerDiscoveredEventArgs(IPEndPoint remoteEndPoint, bool self, string serverName) : base(remoteEndPoint, self)
         {
             ServerName = serverName;
         }
@@ -37,9 +39,10 @@ namespace Soulstone.Duality.Plugins.Cupboard.Multiplayer
         public string ServerName { get; }
         public string ClientName { get; }
 
-        public ServerJoinedEventArgs(NetConnection connection, bool self, string serverName, string clientName) : base(connection, self)
+        public ServerJoinedEventArgs(IPEndPoint remoteEndpoint, bool self, string serverName, string clientName) : base(remoteEndpoint, self)
         {
             ServerName = serverName;
+            ClientName = clientName;
         }
     }
 
@@ -47,7 +50,7 @@ namespace Soulstone.Duality.Plugins.Cupboard.Multiplayer
     {
         public string Reason { get; }
 
-        public ClientDisconnectedEventArgs(NetConnection connection, bool self, string reason) : base(connection, self)
+        public ClientDisconnectedEventArgs(IPEndPoint remoteEndPoint, bool self, string reason) : base(remoteEndPoint, self)
         {
             Reason = reason;
         }
@@ -70,7 +73,7 @@ namespace Soulstone.Duality.Plugins.Cupboard.Multiplayer
         public int Channel;
         public string Data;
 
-        public DataRecievedEventArgs(NetConnection connection, bool self, int channel, string data) : base(connection, self)
+        public DataRecievedEventArgs(IPEndPoint remoteEndPoint, bool self, int channel, string data) : base(remoteEndPoint, self)
         {
             Data = data;
             Channel = channel;

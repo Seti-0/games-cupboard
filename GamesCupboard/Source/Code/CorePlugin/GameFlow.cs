@@ -75,12 +75,12 @@ namespace Soulstone.Duality.Plugins.Cupboard
         {
             if(CupboardApp.Networker.Hosting)
             {
-                OldContext.ShowNotification("Success", $"{e.Connection.RemoteEndPoint.Address}:{e.Connection.RemoteEndPoint.Port} has joined.", duration: 3);
+                OldContext.ShowNotification("Success", $"{e.RemoteEndPoint.Address}:{e.RemoteEndPoint.Port} has joined.", duration: 3);
                 GameNetworking.Sync(CupboardApp.Networker);
             }
             else
             {
-                OldContext.ShowNotification("Success", $"Joined server {e.Connection.RemoteEndPoint.Address}:{e.Connection.RemoteEndPoint.Port}", duration: 3);
+                OldContext.ShowNotification("Success", $"Joined server {e.RemoteEndPoint.Address}:{e.RemoteEndPoint.Port}", duration: 3);
                 
                 var joinButton = Scene.Current.FindComponents<Button>().Where(x => x.Command == "Cancel").FirstOrDefault();
                 joinButton.Command = "Join";
@@ -100,7 +100,7 @@ namespace Soulstone.Duality.Plugins.Cupboard
 
             if(CupboardApp.Networker.Hosting)
             {
-                OldContext.ShowNotification("Info", e.Connection.RemoteEndPoint +" left the server.", duration: 3);
+                OldContext.ShowNotification("Info", e.RemoteEndPoint +" left the server.", duration: 3);
             }
             else
             {

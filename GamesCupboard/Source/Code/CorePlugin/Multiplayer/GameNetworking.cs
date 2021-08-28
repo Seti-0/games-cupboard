@@ -67,7 +67,7 @@ namespace Soulstone.Duality.Plugins.Cupboard.Multiplayer
                     Pos = pos
                 }, stream);
 
-                networker.SendData(DragChannel, Encoding.UTF8.GetString(stream.ToArray()), reliable: action != DragAction.Move);
+                networker.SendData(DragChannel, Encoding.UTF8.GetString(stream.ToArray()));
             }
         }
 
@@ -183,7 +183,7 @@ namespace Soulstone.Duality.Plugins.Cupboard.Multiplayer
                 bool success = false;
 
                 if (message == null || message.DiceID == null)
-                    Logs.Game.WriteWarning("Failed to read dice message sent by " + e.Connection.RemoteEndPoint);
+                    Logs.Game.WriteWarning("Failed to read dice message sent by " + e.RemoteEndPoint);
                 else
                 {
                     var dice = Scene.Current
@@ -219,7 +219,7 @@ namespace Soulstone.Duality.Plugins.Cupboard.Multiplayer
                 bool success = false;
 
                 if (message == null || message.Name == null)
-                    Logs.Game.WriteWarning("Failed to read spin message sent by " + e.Connection.RemoteEndPoint);
+                    Logs.Game.WriteWarning("Failed to read spin message sent by " + e.RemoteEndPoint);
                 else
                 {
                     var target = Scene.Current.FindGameObject(message.Name);
@@ -252,7 +252,7 @@ namespace Soulstone.Duality.Plugins.Cupboard.Multiplayer
                 bool success = false;
 
                 if (message == null || message.Name == null)
-                    Logs.Game.WriteWarning("Failed to read drag message sent by " + e.Connection.RemoteEndPoint);
+                    Logs.Game.WriteWarning("Failed to read drag message sent by " + e.RemoteEndPoint);
                 else
                 {
                     var draggable = Scene.Current.FindGameObject(message.Name)?.GetComponent<Draggable>();
@@ -315,7 +315,7 @@ namespace Soulstone.Duality.Plugins.Cupboard.Multiplayer
                 bool success = false;
 
                 if (save == null)
-                    Logs.Game.WriteWarning("Failed to read save sent by " + e.Connection.RemoteEndPoint);
+                    Logs.Game.WriteWarning("Failed to read save sent by " + e.RemoteEndPoint);
                 else
                 {
                     var game = Scene.Current.FindComponent<GamePieces>();
