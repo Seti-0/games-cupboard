@@ -2,11 +2,15 @@ Two multiplayer board games made using the [Duality](https://github.com/AdamsLai
 
 Chinese Checkers is probably stable at this point, it's been used regularly by the family for the past few years. Both programs are windows-only. Connection is by direct IP, and requires port forwarding if playing over the internet.
 
+<p align="center">
 <img src="https://user-images.githubusercontent.com/39514468/194532809-01fb7b1c-369e-45ee-8017-b41f3d4bf471.png" width="500">
+</p>
 
 Trafalgar hasn't been tested as much, but seems to work. The artwork for this one was done by a friend, Ross Buckley. 
 
+<p align="center">
 <img src="https://user-images.githubusercontent.com/39514468/194535526-aac712b7-9990-4359-93f1-784c9c6288e6.png" width="500">
+</p>
 
 The in-game external-IP display relies on the "icanhazip" public utility, which as of writing this is operated by Cloudfare. If it becomes unavailable, there are other ways of determining it, such as simply googling "what's my ip".
 
