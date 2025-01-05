@@ -1,4 +1,5 @@
-Two multiplayer board games made using the [Duality](https://github.com/AdamsLair/duality) game engine - Chinese Checkers, and Trafalgar. 
+Two multiplayer board games made using the [Duality](https://github.com/AdamsLair/duality) game engine - Chinese Checkers, and Trafalgar.<br>
+Download link [here](https://github.com/Seti-0/games-cupboard/releases/tag/v1).
 
 Chinese Checkers is probably stable at this point, it's been used regularly by the family for the past few years. Both programs are windows-only. Connection is by direct IP, and requires port forwarding if playing over the internet.
 
